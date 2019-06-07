@@ -1,0 +1,47 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-clause-heading" jhiTranslate="gestionrequisitionsfrontendgatewayApp.clause.home.createOrEditLabel">Create or edit a Clause</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!clause.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="clause.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.clause.prefixe" for="field_prefixe">Prefixe</label>
+                    <input type="text" class="form-control" name="prefixe" id="field_prefixe"
+                        [(ngModel)]="clause.prefixe" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.clause.suffixe" for="field_suffixe">Suffixe</label>
+                    <input type="text" class="form-control" name="suffixe" id="field_suffixe"
+                        [(ngModel)]="clause.suffixe" />
+                </div>
+
+                <div class="form-group">
+                    <label jhiTranslate="gestionrequisitionsfrontendgatewayApp.clause.operande" for="field_operande">Operande</label>
+                    <select class="form-control" id="field_operande" multiple name="operande" [(ngModel)]="clause.operandes">
+                        <option [ngValue]="getSelected(clause.operandes, operandeOption)" *ngFor="let operandeOption of operandes; trackBy: trackOperandeById">{{operandeOption.id}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.clause.operateur" for="field_operateur">Operateur</label>
+                    <select class="form-control" id="field_operateur" name="operateur" [(ngModel)]="clause.operateur" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="operateurOption.id === clause.operateur?.id ? clause.operateur : operateurOption" *ngFor="let operateurOption of operateurs; trackBy: trackOperateurById">{{operateurOption.operateur}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

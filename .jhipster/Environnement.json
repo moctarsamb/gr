@@ -1,0 +1,47 @@
+{
+    "name": "Environnement",
+    "fields": [
+        {
+            "fieldName": "code",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "libelle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "champsRecherche",
+            "otherEntityRelationshipName": "environnement",
+            "relationshipName": "champsRecherche"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "filiale",
+            "otherEntityRelationshipName": "environnement",
+            "relationshipName": "filiale",
+            "otherEntityField": "libelle",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20190606120845",
+    "entityTableName": "environnement",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

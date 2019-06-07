@@ -1,0 +1,170 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-requisition-heading" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.home.createOrEditLabel">Create or edit a Requisition</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!requisition.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="requisition.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.numeroArriveeDemande" for="field_numeroArriveeDemande">Numero Arrivee Demande</label>
+                    <input type="number" class="form-control" name="numeroArriveeDemande" id="field_numeroArriveeDemande"
+                        [(ngModel)]="requisition.numeroArriveeDemande" required/>
+                    <div [hidden]="!(editForm.controls.numeroArriveeDemande?.dirty && editForm.controls.numeroArriveeDemande?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.numeroArriveeDemande?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.numeroArriveeDemande?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.numeroPv" for="field_numeroPv">Numero Pv</label>
+                    <input type="number" class="form-control" name="numeroPv" id="field_numeroPv"
+                        [(ngModel)]="requisition.numeroPv" required/>
+                    <div [hidden]="!(editForm.controls.numeroPv?.dirty && editForm.controls.numeroPv?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.numeroPv?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.numeroPv?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.dateSaisiePv" for="field_dateSaisiePv">Date Saisie Pv</label>
+                    <div class="input-group">
+                        <input id="field_dateSaisiePv" type="text" class="form-control" name="dateSaisiePv" ngbDatepicker  #dateSaisiePvDp="ngbDatepicker" [(ngModel)]="requisition.dateSaisiePv"
+                        required/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="dateSaisiePvDp.toggle()"><fa-icon [icon]="'calendar-alt'"></fa-icon></button>
+                        </span>
+                    </div>
+                    <div [hidden]="!(editForm.controls.dateSaisiePv?.dirty && editForm.controls.dateSaisiePv?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.dateSaisiePv?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.dateArriveeDemande" for="field_dateArriveeDemande">Date Arrivee Demande</label>
+                    <div class="d-flex">
+                        <input id="field_dateArriveeDemande" type="datetime-local" class="form-control" name="dateArriveeDemande" [(ngModel)]="dateArriveeDemande" placeholder="YYYY-MM-DD HH:mm"
+                        required/>
+                    </div>
+                    <div [hidden]="!(editForm.controls.dateArriveeDemande?.dirty && editForm.controls.dateArriveeDemande?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.dateArriveeDemande?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.dateArriveeDemande?.errors?.ZonedDateTimelocal" jhiTranslate="entity.validation.ZonedDateTimelocal">
+                            This field should be a date and time.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.dateSaisieDemande" for="field_dateSaisieDemande">Date Saisie Demande</label>
+                    <div class="d-flex">
+                        <input id="field_dateSaisieDemande" type="datetime-local" class="form-control" name="dateSaisieDemande" [(ngModel)]="dateSaisieDemande" placeholder="YYYY-MM-DD HH:mm"
+                        required/>
+                    </div>
+                    <div [hidden]="!(editForm.controls.dateSaisieDemande?.dirty && editForm.controls.dateSaisieDemande?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.dateSaisieDemande?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.dateSaisieDemande?.errors?.ZonedDateTimelocal" jhiTranslate="entity.validation.ZonedDateTimelocal">
+                            This field should be a date and time.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.envoiResultatAutomatique" for="field_envoiResultatAutomatique">Envoi Resultat Automatique</label>
+                    <input type="checkbox" class="form-control" name="envoiResultatAutomatique" id="field_envoiResultatAutomatique"
+                        [(ngModel)]="requisition.envoiResultatAutomatique" />
+                    <div [hidden]="!(editForm.controls.envoiResultatAutomatique?.dirty && editForm.controls.envoiResultatAutomatique?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.envoiResultatAutomatique?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.dateReponse" for="field_dateReponse">Date Reponse</label>
+                    <div class="d-flex">
+                        <input id="field_dateReponse" type="datetime-local" class="form-control" name="dateReponse" [(ngModel)]="dateReponse" placeholder="YYYY-MM-DD HH:mm"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.dateRenvoieResultat" for="field_dateRenvoieResultat">Date Renvoie Resultat</label>
+                    <div class="d-flex">
+                        <input id="field_dateRenvoieResultat" type="datetime-local" class="form-control" name="dateRenvoieResultat" [(ngModel)]="dateRenvoieResultat" placeholder="YYYY-MM-DD HH:mm"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.status" for="field_status">Status</label>
+                    <select class="form-control" name="status" [(ngModel)]="requisition.status" id="field_status"  required>
+                        <option value="ENCOURS">{{'gestionrequisitionsfrontendgatewayApp.StatusEvolution.ENCOURS' | translate}}</option>
+                        <option value="TERMINE">{{'gestionrequisitionsfrontendgatewayApp.StatusEvolution.TERMINE' | translate}}</option>
+                    </select>
+                    <div [hidden]="!(editForm.controls.status?.dirty && editForm.controls.status?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.status?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.etat" for="field_etat">Etat</label>
+                    <select class="form-control" name="etat" [(ngModel)]="requisition.etat" id="field_etat" >
+                        <option value="ERREUR">{{'gestionrequisitionsfrontendgatewayApp.EtatRequisition.ERREUR' | translate}}</option>
+                        <option value="SUCCES">{{'gestionrequisitionsfrontendgatewayApp.EtatRequisition.SUCCES' | translate}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.provenance" for="field_provenance">Provenance</label>
+                    <select class="form-control" id="field_provenance" name="provenance" [(ngModel)]="requisition.provenance" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="provenanceOption.id === requisition.provenance?.id ? requisition.provenance : provenanceOption" *ngFor="let provenanceOption of provenances; trackBy: trackProvenanceById">{{provenanceOption.libelle}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.structure" for="field_structure">Structure</label>
+                    <select class="form-control" id="field_structure" name="structure" [(ngModel)]="requisition.structure" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="structureOption.id === requisition.structure?.id ? requisition.structure : structureOption" *ngFor="let structureOption of structures; trackBy: trackStructureById">{{structureOption.libelle}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.utilisateur" for="field_utilisateur">Utilisateur</label>
+                    <select class="form-control" id="field_utilisateur" name="utilisateur" [(ngModel)]="requisition.utilisateur" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="utilisateurOption.id === requisition.utilisateur?.id ? requisition.utilisateur : utilisateurOption" *ngFor="let utilisateurOption of utilisateurs; trackBy: trackUtilisateurById">{{utilisateurOption.matricule}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

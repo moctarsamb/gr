@@ -1,0 +1,103 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.home.title">Champs Recherches</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-champs-recherche" [routerLink]="['/champs-recherche/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span class="hidden-sm-down"  jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.home.createLabel">
+            Create new Champs Recherche
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+        <div class="col-sm-12">
+            <form name="searchForm" class="form-inline">
+                <div class="input-group w-100 mt-3">
+                    <input type="text" class="form-control" [(ngModel)]="currentSearch" id="currentSearch" name="currentSearch" placeholder="{{ 'gestionrequisitionsfrontendgatewayApp.champsRecherche.home.search' | translate }}">
+                    <button class="input-group-append btn btn-info" (click)="search(currentSearch)">
+                        <fa-icon [icon]="'search'"></fa-icon>
+                    </button>
+                    <button class="input-group-append btn btn-danger" (click)="clear()" *ngIf="currentSearch">
+                        <fa-icon [icon]="'trash-alt'"></fa-icon>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="champsRecherches">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="reset.bind(this)">
+            <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="champs"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.champs">Champs</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="dateDebutExtraction"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.dateDebutExtraction">Date Debut Extraction</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="dateFinExtraction"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.dateFinExtraction">Date Fin Extraction</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="colonne.libelle"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.colonne">Colonne</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="environnement.libelle"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.environnement">Environnement</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="filiale.libelle"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.filiale">Filiale</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="requisition.numeroPv"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.requisition">Requisition</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="typeExtraction.libelle"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.typeExtraction">Type Extraction</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody infinite-scroll (scrolled)="loadPage(page + 1)" [infiniteScrollDisabled]="page >= links['last']" [infiniteScrollDistance]="0">
+            <tr *ngFor="let champsRecherche of champsRecherches ;trackBy: trackId">
+                <td><a [routerLink]="['/champs-recherche', champsRecherche.id, 'view' ]">{{champsRecherche.id}}</a></td>
+                <td>{{champsRecherche.champs}}</td>
+                <td>{{champsRecherche.dateDebutExtraction | date:'mediumDate'}}</td>
+                <td>{{champsRecherche.dateFinExtraction | date:'mediumDate'}}</td>
+                <td>
+                    <div *ngIf="champsRecherche.colonne">
+                        <a [routerLink]="['../colonne', champsRecherche.colonne?.id, 'view' ]" >{{champsRecherche.colonne?.libelle}}</a>
+                    </div>
+                </td>
+                <td>
+                    <div *ngIf="champsRecherche.environnement">
+                        <a [routerLink]="['../environnement', champsRecherche.environnement?.id, 'view' ]" >{{champsRecherche.environnement?.libelle}}</a>
+                    </div>
+                </td>
+                <td>
+                    <div *ngIf="champsRecherche.filiale">
+                        <a [routerLink]="['../filiale', champsRecherche.filiale?.id, 'view' ]" >{{champsRecherche.filiale?.libelle}}</a>
+                    </div>
+                </td>
+                <td>
+                    <div *ngIf="champsRecherche.requisition">
+                        <a [routerLink]="['../requisition', champsRecherche.requisition?.id, 'view' ]" >{{champsRecherche.requisition?.numeroPv}}</a>
+                    </div>
+                </td>
+                <td>
+                    <div *ngIf="champsRecherche.typeExtraction">
+                        <a [routerLink]="['../type-extraction', champsRecherche.typeExtraction?.id, 'view' ]" >{{champsRecherche.typeExtraction?.libelle}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/champs-recherche', champsRecherche.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/champs-recherche', champsRecherche.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', 'champs-recherche', { outlets: { popup: champsRecherche.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

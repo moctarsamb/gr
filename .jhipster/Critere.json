@@ -1,0 +1,36 @@
+{
+    "name": "Critere",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "jointure",
+            "otherEntityRelationshipName": "critere",
+            "relationshipName": "jointure"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "clause",
+            "otherEntityRelationshipName": "critere",
+            "relationshipName": "clause",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "operateurLogique",
+            "otherEntityRelationshipName": "critere",
+            "relationshipName": "operateurLogique",
+            "otherEntityField": "operateurLogique"
+        }
+    ],
+    "changelogDate": "20190606120826",
+    "entityTableName": "critere",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

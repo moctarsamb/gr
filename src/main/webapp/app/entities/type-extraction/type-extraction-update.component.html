@@ -1,0 +1,73 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-type-extraction-heading" jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.home.createOrEditLabel">Create or edit a Type Extraction</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!typeExtraction.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="typeExtraction.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.code" for="field_code">Code</label>
+                    <input type="text" class="form-control" name="code" id="field_code"
+                        [(ngModel)]="typeExtraction.code" required/>
+                    <div [hidden]="!(editForm.controls.code?.dirty && editForm.controls.code?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.code?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.libelle" for="field_libelle">Libelle</label>
+                    <input type="text" class="form-control" name="libelle" id="field_libelle"
+                        [(ngModel)]="typeExtraction.libelle" required/>
+                    <div [hidden]="!(editForm.controls.libelle?.dirty && editForm.controls.libelle?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.libelle?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.monitor" for="field_monitor">Monitor</label>
+                    <select class="form-control" id="field_monitor" multiple name="monitor" [(ngModel)]="typeExtraction.monitors">
+                        <option [ngValue]="getSelected(typeExtraction.monitors, monitorOption)" *ngFor="let monitorOption of monitors; trackBy: trackMonitorById">{{monitorOption.type}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.base" for="field_base">Base</label>
+                    <select class="form-control" id="field_base" name="base" [(ngModel)]="typeExtraction.base" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="baseOption.id === typeExtraction.base?.id ? typeExtraction.base : baseOption" *ngFor="let baseOption of bases; trackBy: trackBaseById">{{baseOption.libelle}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.filtre" for="field_filtre">Filtre</label>
+                    <select class="form-control" id="field_filtre" name="filtre" [(ngModel)]="typeExtraction.filtre" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="filtreOption.id === typeExtraction.filtre?.id ? typeExtraction.filtre : filtreOption" *ngFor="let filtreOption of filtres; trackBy: trackFiltreById">{{filtreOption.id}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.flux" for="field_flux">Flux</label>
+                    <select class="form-control" id="field_flux" name="flux" [(ngModel)]="typeExtraction.flux" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="fluxOption.id === typeExtraction.flux?.id ? typeExtraction.flux : fluxOption" *ngFor="let fluxOption of fluxes; trackBy: trackFluxById">{{fluxOption.libelle}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="serveur">
+            <h2><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.detail.title">Serveur</span> {{serveur.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.nom">Nom</span></dt>
+                <dd>
+                    <span>{{serveur.nom}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.adresseIp">Adresse Ip</span></dt>
+                <dd>
+                    <span>{{serveur.adresseIp}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.login">Login</span></dt>
+                <dd>
+                    <span>{{serveur.login}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.motDePasse">Mot De Passe</span></dt>
+                <dd>
+                    <span>{{serveur.motDePasse}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.repertoireDepots">Repertoire Depots</span></dt>
+                <dd>
+                    <span>{{serveur.repertoireDepots}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.repertoireResultats">Repertoire Resultats</span></dt>
+                <dd>
+                    <span>{{serveur.repertoireResultats}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.repertoireParametres">Repertoire Parametres</span></dt>
+                <dd>
+                    <span>{{serveur.repertoireParametres}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.estActif">Est Actif</span></dt>
+                <dd>
+                    <span>{{serveur.estActif}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/serveur', serveur.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

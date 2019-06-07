@@ -1,0 +1,54 @@
+{
+    "name": "Clause",
+    "fields": [
+        {
+            "fieldName": "prefixe",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "suffixe",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "critere",
+            "otherEntityRelationshipName": "clause",
+            "relationshipName": "critere"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "operande",
+            "otherEntityRelationshipName": "clause",
+            "relationshipName": "operande",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "operateur",
+            "otherEntityRelationshipName": "clause",
+            "relationshipName": "operateur",
+            "otherEntityField": "operateur"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "filtre",
+            "otherEntityRelationshipName": "clause",
+            "relationshipName": "filtre",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20190606120834",
+    "entityTableName": "clause",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

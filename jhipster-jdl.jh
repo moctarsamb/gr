@@ -1,0 +1,248 @@
+entity Jointure {}
+
+entity Dimension {}
+
+entity Monitor {
+    type TypeMonitor required
+}
+
+entity Filtre {}
+
+entity Critere {}
+
+entity Fonction {
+    nom String required unique
+}
+
+entity Base {
+    libelle String required unique,
+    description String unique
+}
+
+entity Operande {}
+
+entity Valeur {
+    valeur String required
+}
+
+entity Flux {
+    libelle String required,
+    description String required
+}
+
+entity OperateurLogique {
+    operateurLogique String required unique
+}
+
+entity Operateur {
+    operateur String required unique
+}
+
+entity Clause {
+    prefixe String,
+    suffixe String
+}
+
+entity Utilisateur {
+    matricule String required unique,
+    username String required unique,
+    firstName String required,
+    lastName String required,
+    email String required unique,
+    estActif Boolean required
+}
+
+entity Profil {
+    libelle String required unique,
+    description String required unique
+}
+
+entity TypeExtraction {
+    code String required unique,
+    libelle String required unique
+}
+
+entity TypeJointure {
+    type String required unique
+}
+
+entity Colonne {
+    libelle String required,
+    description String unique,
+    alias String
+}
+
+entity Filiale {
+    code String required unique,
+    libelle String required unique
+}
+
+entity Structure {
+    code String required unique,
+    libelle String required unique
+}
+
+entity Resultat {
+    status StatusEvolution required,
+    etat EtatResultat
+}
+
+entity FichierResultat {
+    cheminFichier String unique,
+    format FormatResultat required,
+    avecStatistiques Boolean required
+}
+
+entity ChampsRecherche {
+    champs String required,
+    dateDebutExtraction LocalDate required,
+    dateFinExtraction LocalDate required
+}
+
+entity Environnement {
+    code String required unique,
+    libelle String required unique
+}
+
+entity Requisition {
+    numeroArriveeDemande Integer required,
+    numeroPv Integer required unique,
+    dateSaisiePv LocalDate required,
+    dateArriveeDemande Instant required,
+    dateSaisieDemande Instant required,
+    envoiResultatAutomatique Boolean required,
+    dateReponse Instant,
+    dateRenvoieResultat Instant,
+    status StatusEvolution required,
+    etat EtatRequisition
+}
+
+entity EnvoiResultat {
+    email String required,
+    dateEnvoi Instant
+}
+
+entity Notification {
+    libelle String required,
+    description String required,
+    estOuvert Boolean required
+}
+
+entity DroitAcces {
+    code String required unique,
+    libelle String required unique
+}
+
+entity Provenance {
+    code String required unique,
+    libelle String required unique,
+    email String required unique
+}
+
+entity Typologie {
+    code String required unique,
+    libelle String required unique,
+    condition String required,
+    traitement String required
+}
+
+entity Serveur {
+    nom String required unique,
+    adresseIp String required unique,
+    login String required,
+    motDePasse String required,
+    repertoireDepots String required,
+    repertoireResultats String required,
+    repertoireParametres String required,
+    estActif Boolean required
+}
+
+entity ParametrageApplication {
+    nomFichier String required unique,
+    cheminFichier String required unique
+}
+
+enum StatusEvolution {
+    ENCOURS, TERMINE
+}
+
+enum EtatResultat {
+    SUCCES, SANSREPONSE, CHINOIS, ERREUR, ERREURBD
+}
+
+enum FormatResultat {
+	CSV, EXCEL, PDF
+}
+
+enum EtatRequisition {
+    ERREUR, SUCCES
+}
+
+enum TypeMonitor {
+    COLONNE, FONCTION
+}
+
+relationship OneToOne {
+    Utilisateur{user(login)} to User{utilisateur(matricule)}
+    Resultat{champsRecherche(champs)} to ChampsRecherche{resultat(etat)}
+}
+
+relationship OneToMany {
+    Base{dimension} to Dimension{base(libelle)}
+    Base{flux(libelle)} to Flux{base(libelle)}
+    Base{typeExtraction(libelle)} to TypeExtraction{base(libelle)}
+    Clause{critere} to Critere{clause}
+    Colonne{champsRecherche(champs)} to ChampsRecherche{colonne(libelle)}
+    Colonne{monitor(type)} to Monitor{colonne(libelle)}
+    Critere{jointure} to Jointure{critere}
+    DroitAcces{utilisateur(matricule)} to Utilisateur{droitAcces(libelle)}
+    Environnement{champsRecherche(champs)} to ChampsRecherche{environnement(libelle)}
+    FichierResultat{envoiResultat(email)} to EnvoiResultat{fichierResultat(cheminFichier)}
+    Filiale{champsRecherche(champs)} to ChampsRecherche{filiale(libelle)}
+    Filiale{structure(libelle)} to Structure{filiale(libelle)}
+    Filiale{utilisateur(matricule)} to Utilisateur{filiale(libelle)}
+    Filtre{typeExtraction(libelle)} to TypeExtraction{filtre}
+    Flux{colonne(libelle)} to Colonne{flux(libelle)}
+    Flux{dimension} to Dimension{flux(libelle)}
+    Flux{jointure} to Jointure{flux(libelle)}
+    Flux{typeExtraction(libelle)} to TypeExtraction{flux(libelle)}
+    Fonction{monitor(type)} to Monitor{fonction(nom)}
+    Fonction{operande} to Operande{fonction(nom)}
+    OperateurLogique{critere} to Critere{operateurLogique(operateurLogique)}
+    OperateurLogique{filtre} to Filtre{operateurLogique(operateurLogique)}
+    Operateur{clause} to Clause{operateur(operateur)}
+    Profil{utilisateur(matricule)} to Utilisateur{profil(libelle)}
+    Provenance{requisition(numeroPv)} to Requisition{provenance(libelle)}
+    Requisition{champsRecherche(champs)} to ChampsRecherche{requisition(numeroPv)}
+    Resultat{fichierResultat(cheminFichier)} to FichierResultat{resultat(etat)}
+    Structure{requisition(numeroPv)} to Requisition{structure(libelle)}
+    TypeExtraction{champsRecherche(champs)} to ChampsRecherche{typeExtraction(libelle)}
+    TypeExtraction{dimension} to Dimension{typeExtraction(libelle)}
+    TypeJointure{jointure} to Jointure{typeJointure(type)}
+    Utilisateur{envoiResultat(email)} to EnvoiResultat{utilisateur(matricule)}
+    Utilisateur{notification(libelle)} to Notification{utilisateur(matricule)}
+    Utilisateur{profilAdministre(libelle)} to Profil{administrateurProfil(matricule)}
+    Utilisateur{requisition(numeroPv)} to Requisition{utilisateur(matricule)}
+}
+
+relationship ManyToMany {
+    Clause{operande} to Operande{clause}
+    Colonne{typeExtractionRequetee(libelle)} to TypeExtraction{colonneRequetable(libelle)}
+    Dimension{monitor(type)} to Monitor{dimension}
+    Filiale{environnement(libelle)} to Environnement{filiale(libelle)}
+    Filiale{profil(libelle)} to Profil{filiale(libelle)}
+    Filtre{clause} to Clause{filtre}
+    Operande{colonne(libelle)} to Colonne{Operande}
+    Operande{valeur(valeur)} to Valeur{Operande}
+    Profil{colonne(libelle)} to Colonne{profil(libelle)}
+    Profil{typeExtraction(libelle)} to TypeExtraction{profil(libelle)}
+    TypeExtraction{monitor(type)} to Monitor{typeExtraction(libelle)}
+}
+
+service * with serviceClass
+
+paginate * with infinite-scroll
+
+search * with elasticsearch
+
+filter *

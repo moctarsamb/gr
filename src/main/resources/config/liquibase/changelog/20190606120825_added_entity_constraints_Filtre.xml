@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Filtre.
+    -->
+    <changeSet id="20190606120825-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="filtre_id"
+                                 baseTableName="filtre_clause"
+                                 constraintName="fk_filtre_clause_filtre_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="filtre"/>
+        <addForeignKeyConstraint baseColumnNames="clause_id"
+                                 baseTableName="filtre_clause"
+                                 constraintName="fk_filtre_clause_clause_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="clause"/>
+        
+        <addForeignKeyConstraint baseColumnNames="operateur_logique_id"
+                                 baseTableName="filtre"
+                                 constraintName="fk_filtre_operateur_logique_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="operateur_logique"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <!--
+        Added the entity Requisition.
+    -->
+    <changeSet id="20190606120846-1" author="jhipster">
+        <createTable tableName="requisition">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="numero_arrivee_demande" type="integer">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="numero_pv" type="integer">
+                <constraints nullable="false" unique="true" uniqueConstraintName="ux_requisition_numero_pv" />
+            </column>
+
+            <column name="date_saisie_pv" type="date">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="date_arrivee_demande" type="datetime">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="date_saisie_demande" type="datetime">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="envoi_resultat_automatique" type="boolean">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="date_reponse" type="datetime">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="date_renvoie_resultat" type="datetime">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="status" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="etat" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="provenance_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="structure_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="utilisateur_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
+        </createTable>
+        <dropDefaultValue tableName="requisition" columnName="date_arrivee_demande" columnDataType="datetime"/>
+        <dropDefaultValue tableName="requisition" columnName="date_saisie_demande" columnDataType="datetime"/>
+        <dropDefaultValue tableName="requisition" columnName="date_reponse" columnDataType="datetime"/>
+        <dropDefaultValue tableName="requisition" columnName="date_renvoie_resultat" columnDataType="datetime"/>
+        
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
+</databaseChangeLog>

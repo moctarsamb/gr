@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="monitor">
+            <h2><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.monitor.detail.title">Monitor</span> {{monitor.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.monitor.type">Type</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'gestionrequisitionsfrontendgatewayApp.TypeMonitor.' + monitor.type}}">{{monitor.type}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.monitor.colonne">Colonne</span></dt>
+                <dd>
+                    <div *ngIf="monitor.colonne">
+                        <a [routerLink]="['/colonne', monitor.colonne?.id, 'view']">{{monitor.colonne?.libelle}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.monitor.fonction">Fonction</span></dt>
+                <dd>
+                    <div *ngIf="monitor.fonction">
+                        <a [routerLink]="['/fonction', monitor.fonction?.id, 'view']">{{monitor.fonction?.nom}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/monitor', monitor.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

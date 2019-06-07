@@ -1,0 +1,27 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "clause": {
+            "home": {
+                "title": "Clauses",
+                "createLabel": "Créer un nouveau Clause",
+                "createOrEditLabel": "Créer ou éditer un Clause",
+                "search": "Recherche pour Clause"
+            },
+            "created": "Un nouveau Clause a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Clause avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Clause avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Clause {{ id }} ?"
+            },
+            "detail": {
+                "title": "Clause"
+            },
+            "prefixe": "Prefixe",
+            "suffixe": "Suffixe",
+            "critere": "Critere",
+            "operande": "Operande",
+            "operateur": "Operateur",
+            "filtre": "Filtre"
+        }
+    }
+}

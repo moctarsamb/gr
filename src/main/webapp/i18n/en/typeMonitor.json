@@ -1,0 +1,9 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "TypeMonitor": {
+            "null": "",
+            "COLONNE": "COLONNE",
+            "FONCTION": "FONCTION"
+        }
+    }
+}

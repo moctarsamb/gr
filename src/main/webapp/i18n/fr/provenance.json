@@ -1,0 +1,25 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "provenance": {
+            "home": {
+                "title": "Provenances",
+                "createLabel": "Créer un nouveau Provenance",
+                "createOrEditLabel": "Créer ou éditer un Provenance",
+                "search": "Recherche pour Provenance"
+            },
+            "created": "Un nouveau Provenance a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Provenance avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Provenance avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Provenance {{ id }} ?"
+            },
+            "detail": {
+                "title": "Provenance"
+            },
+            "code": "Code",
+            "libelle": "Libelle",
+            "email": "Email",
+            "requisition": "Requisition"
+        }
+    }
+}

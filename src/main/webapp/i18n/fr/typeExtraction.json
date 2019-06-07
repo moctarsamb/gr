@@ -1,0 +1,31 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "typeExtraction": {
+            "home": {
+                "title": "TypeExtractions",
+                "createLabel": "Créer un nouveau Type Extraction",
+                "createOrEditLabel": "Créer ou éditer un Type Extraction",
+                "search": "Recherche pour Type Extraction"
+            },
+            "created": "Un nouveau Type Extraction a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Type Extraction avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Type Extraction avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Type Extraction {{ id }} ?"
+            },
+            "detail": {
+                "title": "Type Extraction"
+            },
+            "code": "Code",
+            "libelle": "Libelle",
+            "champsRecherche": "Champs Recherche",
+            "dimension": "Dimension",
+            "monitor": "Monitor",
+            "base": "Base",
+            "filtre": "Filtre",
+            "flux": "Flux",
+            "colonneRequetable": "Colonne Requetable",
+            "profil": "Profil"
+        }
+    }
+}

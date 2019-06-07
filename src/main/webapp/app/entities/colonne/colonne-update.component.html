@@ -1,0 +1,60 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-colonne-heading" jhiTranslate="gestionrequisitionsfrontendgatewayApp.colonne.home.createOrEditLabel">Create or edit a Colonne</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!colonne.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="colonne.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.colonne.libelle" for="field_libelle">Libelle</label>
+                    <input type="text" class="form-control" name="libelle" id="field_libelle"
+                        [(ngModel)]="colonne.libelle" required/>
+                    <div [hidden]="!(editForm.controls.libelle?.dirty && editForm.controls.libelle?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.libelle?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.colonne.description" for="field_description">Description</label>
+                    <input type="text" class="form-control" name="description" id="field_description"
+                        [(ngModel)]="colonne.description" />
+                    <div [hidden]="!(editForm.controls.description?.dirty && editForm.controls.description?.invalid)">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.colonne.alias" for="field_alias">Alias</label>
+                    <input type="text" class="form-control" name="alias" id="field_alias"
+                        [(ngModel)]="colonne.alias" />
+                </div>
+
+                <div class="form-group">
+                    <label jhiTranslate="gestionrequisitionsfrontendgatewayApp.colonne.typeExtractionRequetee" for="field_typeExtractionRequetee">Type Extraction Requetee</label>
+                    <select class="form-control" id="field_typeExtractionRequetee" multiple name="typeExtractionRequetee" [(ngModel)]="colonne.typeExtractionRequetees">
+                        <option [ngValue]="getSelected(colonne.typeExtractionRequetees, typeExtractionOption)" *ngFor="let typeExtractionOption of typeextractions; trackBy: trackTypeExtractionById">{{typeExtractionOption.libelle}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.colonne.flux" for="field_flux">Flux</label>
+                    <select class="form-control" id="field_flux" name="flux" [(ngModel)]="colonne.flux" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="fluxOption.id === colonne.flux?.id ? colonne.flux : fluxOption" *ngFor="let fluxOption of fluxes; trackBy: trackFluxById">{{fluxOption.libelle}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "typologie": {
+            "home": {
+                "title": "Typologies",
+                "createLabel": "Créer un nouveau Typologie",
+                "createOrEditLabel": "Créer ou éditer un Typologie",
+                "search": "Recherche pour Typologie"
+            },
+            "created": "Un nouveau Typologie a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Typologie avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Typologie avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Typologie {{ id }} ?"
+            },
+            "detail": {
+                "title": "Typologie"
+            },
+            "code": "Code",
+            "libelle": "Libelle",
+            "condition": "Condition",
+            "traitement": "Traitement"
+        }
+    }
+}

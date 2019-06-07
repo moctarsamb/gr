@@ -1,0 +1,45 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-jointure-heading" jhiTranslate="gestionrequisitionsfrontendgatewayApp.jointure.home.createOrEditLabel">Create or edit a Jointure</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!jointure.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="jointure.id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.jointure.critere" for="field_critere">Critere</label>
+                    <select class="form-control" id="field_critere" name="critere" [(ngModel)]="jointure.critere" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="critereOption.id === jointure.critere?.id ? jointure.critere : critereOption" *ngFor="let critereOption of criteres; trackBy: trackCritereById">{{critereOption.id}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.jointure.flux" for="field_flux">Flux</label>
+                    <select class="form-control" id="field_flux" name="flux" [(ngModel)]="jointure.flux" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="fluxOption.id === jointure.flux?.id ? jointure.flux : fluxOption" *ngFor="let fluxOption of fluxes; trackBy: trackFluxById">{{fluxOption.libelle}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.jointure.typeJointure" for="field_typeJointure">Type Jointure</label>
+                    <select class="form-control" id="field_typeJointure" name="typeJointure" [(ngModel)]="jointure.typeJointure" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="typeJointureOption.id === jointure.typeJointure?.id ? jointure.typeJointure : typeJointureOption" *ngFor="let typeJointureOption of typejointures; trackBy: trackTypeJointureById">{{typeJointureOption.type}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

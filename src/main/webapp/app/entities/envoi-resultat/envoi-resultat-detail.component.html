@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="envoiResultat">
+            <h2><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.envoiResultat.detail.title">Envoi Resultat</span> {{envoiResultat.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.envoiResultat.email">Email</span></dt>
+                <dd>
+                    <span>{{envoiResultat.email}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.envoiResultat.dateEnvoi">Date Envoi</span></dt>
+                <dd>
+                    <span>{{envoiResultat.dateEnvoi}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.envoiResultat.fichierResultat">Fichier Resultat</span></dt>
+                <dd>
+                    <div *ngIf="envoiResultat.fichierResultat">
+                        <a [routerLink]="['/fichier-resultat', envoiResultat.fichierResultat?.id, 'view']">{{envoiResultat.fichierResultat?.cheminFichier}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.envoiResultat.utilisateur">Utilisateur</span></dt>
+                <dd>
+                    <div *ngIf="envoiResultat.utilisateur">
+                        <a [routerLink]="['/utilisateur', envoiResultat.utilisateur?.id, 'view']">{{envoiResultat.utilisateur?.matricule}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/envoi-resultat', envoiResultat.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

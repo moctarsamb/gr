@@ -1,0 +1,24 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "jointure": {
+            "home": {
+                "title": "Jointures",
+                "createLabel": "Créer un nouveau Jointure",
+                "createOrEditLabel": "Créer ou éditer un Jointure",
+                "search": "Recherche pour Jointure"
+            },
+            "created": "Un nouveau Jointure a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Jointure avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Jointure avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Jointure {{ id }} ?"
+            },
+            "detail": {
+                "title": "Jointure"
+            },
+            "critere": "Critere",
+            "flux": "Flux",
+            "typeJointure": "Type Jointure"
+        }
+    }
+}

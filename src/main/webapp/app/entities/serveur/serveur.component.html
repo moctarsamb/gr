@@ -1,0 +1,83 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.home.title">Serveurs</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-serveur" [routerLink]="['/serveur/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span class="hidden-sm-down"  jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.home.createLabel">
+            Create new Serveur
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+        <div class="col-sm-12">
+            <form name="searchForm" class="form-inline">
+                <div class="input-group w-100 mt-3">
+                    <input type="text" class="form-control" [(ngModel)]="currentSearch" id="currentSearch" name="currentSearch" placeholder="{{ 'gestionrequisitionsfrontendgatewayApp.serveur.home.search' | translate }}">
+                    <button class="input-group-append btn btn-info" (click)="search(currentSearch)">
+                        <fa-icon [icon]="'search'"></fa-icon>
+                    </button>
+                    <button class="input-group-append btn btn-danger" (click)="clear()" *ngIf="currentSearch">
+                        <fa-icon [icon]="'trash-alt'"></fa-icon>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="serveurs">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="reset.bind(this)">
+            <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="nom"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.nom">Nom</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="adresseIp"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.adresseIp">Adresse Ip</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="login"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.login">Login</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="motDePasse"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.motDePasse">Mot De Passe</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="repertoireDepots"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.repertoireDepots">Repertoire Depots</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="repertoireResultats"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.repertoireResultats">Repertoire Resultats</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="repertoireParametres"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.repertoireParametres">Repertoire Parametres</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="estActif"><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.estActif">Est Actif</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody infinite-scroll (scrolled)="loadPage(page + 1)" [infiniteScrollDisabled]="page >= links['last']" [infiniteScrollDistance]="0">
+            <tr *ngFor="let serveur of serveurs ;trackBy: trackId">
+                <td><a [routerLink]="['/serveur', serveur.id, 'view' ]">{{serveur.id}}</a></td>
+                <td>{{serveur.nom}}</td>
+                <td>{{serveur.adresseIp}}</td>
+                <td>{{serveur.login}}</td>
+                <td>{{serveur.motDePasse}}</td>
+                <td>{{serveur.repertoireDepots}}</td>
+                <td>{{serveur.repertoireResultats}}</td>
+                <td>{{serveur.repertoireParametres}}</td>
+                <td>{{serveur.estActif}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/serveur', serveur.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/serveur', serveur.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', 'serveur', { outlets: { popup: serveur.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

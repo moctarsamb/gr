@@ -1,0 +1,81 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="requisition">
+            <h2><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.detail.title">Requisition</span> {{requisition.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.numeroArriveeDemande">Numero Arrivee Demande</span></dt>
+                <dd>
+                    <span>{{requisition.numeroArriveeDemande}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.numeroPv">Numero Pv</span></dt>
+                <dd>
+                    <span>{{requisition.numeroPv}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.dateSaisiePv">Date Saisie Pv</span></dt>
+                <dd>
+                    <span>{{requisition.dateSaisiePv}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.dateArriveeDemande">Date Arrivee Demande</span></dt>
+                <dd>
+                    <span>{{requisition.dateArriveeDemande}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.dateSaisieDemande">Date Saisie Demande</span></dt>
+                <dd>
+                    <span>{{requisition.dateSaisieDemande}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.envoiResultatAutomatique">Envoi Resultat Automatique</span></dt>
+                <dd>
+                    <span>{{requisition.envoiResultatAutomatique}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.dateReponse">Date Reponse</span></dt>
+                <dd>
+                    <span>{{requisition.dateReponse}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.dateRenvoieResultat">Date Renvoie Resultat</span></dt>
+                <dd>
+                    <span>{{requisition.dateRenvoieResultat}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.status">Status</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'gestionrequisitionsfrontendgatewayApp.StatusEvolution.' + requisition.status}}">{{requisition.status}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.etat">Etat</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'gestionrequisitionsfrontendgatewayApp.EtatRequisition.' + requisition.etat}}">{{requisition.etat}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.provenance">Provenance</span></dt>
+                <dd>
+                    <div *ngIf="requisition.provenance">
+                        <a [routerLink]="['/provenance', requisition.provenance?.id, 'view']">{{requisition.provenance?.libelle}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.structure">Structure</span></dt>
+                <dd>
+                    <div *ngIf="requisition.structure">
+                        <a [routerLink]="['/structure', requisition.structure?.id, 'view']">{{requisition.structure?.libelle}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.requisition.utilisateur">Utilisateur</span></dt>
+                <dd>
+                    <div *ngIf="requisition.utilisateur">
+                        <a [routerLink]="['/utilisateur', requisition.utilisateur?.id, 'view']">{{requisition.utilisateur?.matricule}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/requisition', requisition.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

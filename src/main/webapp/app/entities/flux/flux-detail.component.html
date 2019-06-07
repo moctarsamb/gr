@@ -1,0 +1,37 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="flux">
+            <h2><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.flux.detail.title">Flux</span> {{flux.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.flux.libelle">Libelle</span></dt>
+                <dd>
+                    <span>{{flux.libelle}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.flux.description">Description</span></dt>
+                <dd>
+                    <span>{{flux.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.flux.base">Base</span></dt>
+                <dd>
+                    <div *ngIf="flux.base">
+                        <a [routerLink]="['/base', flux.base?.id, 'view']">{{flux.base?.libelle}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/flux', flux.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

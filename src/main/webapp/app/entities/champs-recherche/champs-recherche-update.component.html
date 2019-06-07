@@ -1,0 +1,102 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-champs-recherche-heading" jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.home.createOrEditLabel">Create or edit a Champs Recherche</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!champsRecherche.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="champsRecherche.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.champs" for="field_champs">Champs</label>
+                    <input type="text" class="form-control" name="champs" id="field_champs"
+                        [(ngModel)]="champsRecherche.champs" required/>
+                    <div [hidden]="!(editForm.controls.champs?.dirty && editForm.controls.champs?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.champs?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.dateDebutExtraction" for="field_dateDebutExtraction">Date Debut Extraction</label>
+                    <div class="input-group">
+                        <input id="field_dateDebutExtraction" type="text" class="form-control" name="dateDebutExtraction" ngbDatepicker  #dateDebutExtractionDp="ngbDatepicker" [(ngModel)]="champsRecherche.dateDebutExtraction"
+                        required/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="dateDebutExtractionDp.toggle()"><fa-icon [icon]="'calendar-alt'"></fa-icon></button>
+                        </span>
+                    </div>
+                    <div [hidden]="!(editForm.controls.dateDebutExtraction?.dirty && editForm.controls.dateDebutExtraction?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.dateDebutExtraction?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.dateFinExtraction" for="field_dateFinExtraction">Date Fin Extraction</label>
+                    <div class="input-group">
+                        <input id="field_dateFinExtraction" type="text" class="form-control" name="dateFinExtraction" ngbDatepicker  #dateFinExtractionDp="ngbDatepicker" [(ngModel)]="champsRecherche.dateFinExtraction"
+                        required/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="dateFinExtractionDp.toggle()"><fa-icon [icon]="'calendar-alt'"></fa-icon></button>
+                        </span>
+                    </div>
+                    <div [hidden]="!(editForm.controls.dateFinExtraction?.dirty && editForm.controls.dateFinExtraction?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.dateFinExtraction?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.colonne" for="field_colonne">Colonne</label>
+                    <select class="form-control" id="field_colonne" name="colonne" [(ngModel)]="champsRecherche.colonne" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="colonneOption.id === champsRecherche.colonne?.id ? champsRecherche.colonne : colonneOption" *ngFor="let colonneOption of colonnes; trackBy: trackColonneById">{{colonneOption.libelle}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.environnement" for="field_environnement">Environnement</label>
+                    <select class="form-control" id="field_environnement" name="environnement" [(ngModel)]="champsRecherche.environnement" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="environnementOption.id === champsRecherche.environnement?.id ? champsRecherche.environnement : environnementOption" *ngFor="let environnementOption of environnements; trackBy: trackEnvironnementById">{{environnementOption.libelle}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.filiale" for="field_filiale">Filiale</label>
+                    <select class="form-control" id="field_filiale" name="filiale" [(ngModel)]="champsRecherche.filiale" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="filialeOption.id === champsRecherche.filiale?.id ? champsRecherche.filiale : filialeOption" *ngFor="let filialeOption of filiales; trackBy: trackFilialeById">{{filialeOption.libelle}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.requisition" for="field_requisition">Requisition</label>
+                    <select class="form-control" id="field_requisition" name="requisition" [(ngModel)]="champsRecherche.requisition" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="requisitionOption.id === champsRecherche.requisition?.id ? champsRecherche.requisition : requisitionOption" *ngFor="let requisitionOption of requisitions; trackBy: trackRequisitionById">{{requisitionOption.numeroPv}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.typeExtraction" for="field_typeExtraction">Type Extraction</label>
+                    <select class="form-control" id="field_typeExtraction" name="typeExtraction" [(ngModel)]="champsRecherche.typeExtraction" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="typeExtractionOption.id === champsRecherche.typeExtraction?.id ? champsRecherche.typeExtraction : typeExtractionOption" *ngFor="let typeExtractionOption of typeextractions; trackBy: trackTypeExtractionById">{{typeExtractionOption.libelle}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

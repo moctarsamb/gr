@@ -1,0 +1,30 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "colonne": {
+            "home": {
+                "title": "Colonnes",
+                "createLabel": "Créer un nouveau Colonne",
+                "createOrEditLabel": "Créer ou éditer un Colonne",
+                "search": "Recherche pour Colonne"
+            },
+            "created": "Un nouveau Colonne a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Colonne avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Colonne avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Colonne {{ id }} ?"
+            },
+            "detail": {
+                "title": "Colonne"
+            },
+            "libelle": "Libelle",
+            "description": "Description",
+            "alias": "Alias",
+            "champsRecherche": "Champs Recherche",
+            "monitor": "Monitor",
+            "typeExtractionRequetee": "Type Extraction Requetee",
+            "flux": "Flux",
+            "operande": "Operande",
+            "profil": "Profil"
+        }
+    }
+}

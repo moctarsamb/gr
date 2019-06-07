@@ -1,0 +1,65 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-profil-heading" jhiTranslate="gestionrequisitionsfrontendgatewayApp.profil.home.createOrEditLabel">Create or edit a Profil</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!profil.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="profil.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.profil.libelle" for="field_libelle">Libelle</label>
+                    <input type="text" class="form-control" name="libelle" id="field_libelle"
+                        [(ngModel)]="profil.libelle" required/>
+                    <div [hidden]="!(editForm.controls.libelle?.dirty && editForm.controls.libelle?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.libelle?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.profil.description" for="field_description">Description</label>
+                    <input type="text" class="form-control" name="description" id="field_description"
+                        [(ngModel)]="profil.description" required/>
+                    <div [hidden]="!(editForm.controls.description?.dirty && editForm.controls.description?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.description?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label jhiTranslate="gestionrequisitionsfrontendgatewayApp.profil.colonne" for="field_colonne">Colonne</label>
+                    <select class="form-control" id="field_colonne" multiple name="colonne" [(ngModel)]="profil.colonnes">
+                        <option [ngValue]="getSelected(profil.colonnes, colonneOption)" *ngFor="let colonneOption of colonnes; trackBy: trackColonneById">{{colonneOption.libelle}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label jhiTranslate="gestionrequisitionsfrontendgatewayApp.profil.typeExtraction" for="field_typeExtraction">Type Extraction</label>
+                    <select class="form-control" id="field_typeExtraction" multiple name="typeExtraction" [(ngModel)]="profil.typeExtractions">
+                        <option [ngValue]="getSelected(profil.typeExtractions, typeExtractionOption)" *ngFor="let typeExtractionOption of typeextractions; trackBy: trackTypeExtractionById">{{typeExtractionOption.libelle}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.profil.administrateurProfil" for="field_administrateurProfil">Administrateur Profil</label>
+                    <select class="form-control" id="field_administrateurProfil" name="administrateurProfil" [(ngModel)]="profil.administrateurProfil" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="utilisateurOption.id === profil.administrateurProfil?.id ? profil.administrateurProfil : utilisateurOption" *ngFor="let utilisateurOption of utilisateurs; trackBy: trackUtilisateurById">{{utilisateurOption.matricule}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+{
+    "name": "Profil",
+    "fields": [
+        {
+            "fieldName": "libelle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "utilisateur",
+            "otherEntityRelationshipName": "profil",
+            "relationshipName": "utilisateur"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "colonne",
+            "otherEntityRelationshipName": "profil",
+            "relationshipName": "colonne",
+            "otherEntityField": "libelle",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "typeExtraction",
+            "otherEntityRelationshipName": "profil",
+            "relationshipName": "typeExtraction",
+            "otherEntityField": "libelle",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "utilisateur",
+            "otherEntityRelationshipName": "profilAdministre",
+            "relationshipName": "administrateurProfil",
+            "otherEntityField": "matricule"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "filiale",
+            "otherEntityRelationshipName": "profil",
+            "relationshipName": "filiale",
+            "otherEntityField": "libelle",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20190606120836",
+    "entityTableName": "profil",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

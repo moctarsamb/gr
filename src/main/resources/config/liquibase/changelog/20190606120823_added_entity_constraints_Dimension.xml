@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Dimension.
+    -->
+    <changeSet id="20190606120823-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="dimension_id"
+                                 baseTableName="dimension_monitor"
+                                 constraintName="fk_dimension_monitor_dimension_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dimension"/>
+        <addForeignKeyConstraint baseColumnNames="monitor_id"
+                                 baseTableName="dimension_monitor"
+                                 constraintName="fk_dimension_monitor_monitor_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="monitor"/>
+        
+        <addForeignKeyConstraint baseColumnNames="base_id"
+                                 baseTableName="dimension"
+                                 constraintName="fk_dimension_base_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="base"/>
+
+        <addForeignKeyConstraint baseColumnNames="flux_id"
+                                 baseTableName="dimension"
+                                 constraintName="fk_dimension_flux_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="flux"/>
+
+        <addForeignKeyConstraint baseColumnNames="type_extraction_id"
+                                 baseTableName="dimension"
+                                 constraintName="fk_dimension_type_extraction_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="type_extraction"/>
+
+    </changeSet>
+</databaseChangeLog>

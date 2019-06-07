@@ -1,0 +1,23 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "parametrageApplication": {
+            "home": {
+                "title": "Parametrage Applications",
+                "createLabel": "Create a new Parametrage Application",
+                "createOrEditLabel": "Create or edit a Parametrage Application",
+                "search": "Search for Parametrage Application"
+            },
+            "created": "A new Parametrage Application is created with identifier {{ param }}",
+            "updated": "A Parametrage Application is updated with identifier {{ param }}",
+            "deleted": "A Parametrage Application is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Parametrage Application {{ id }}?"
+            },
+            "detail": {
+                "title": "Parametrage Application"
+            },
+            "nomFichier": "Nom Fichier",
+            "cheminFichier": "Chemin Fichier"
+        }
+    }
+}

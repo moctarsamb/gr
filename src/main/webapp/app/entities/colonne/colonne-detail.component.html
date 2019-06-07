@@ -1,0 +1,47 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="colonne">
+            <h2><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.colonne.detail.title">Colonne</span> {{colonne.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.colonne.libelle">Libelle</span></dt>
+                <dd>
+                    <span>{{colonne.libelle}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.colonne.description">Description</span></dt>
+                <dd>
+                    <span>{{colonne.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.colonne.alias">Alias</span></dt>
+                <dd>
+                    <span>{{colonne.alias}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.colonne.typeExtractionRequetee">Type Extraction Requetee</span></dt>
+                <dd>
+                    <span *ngFor="let typeExtractionRequetee of colonne.typeExtractionRequetees; let last = last">
+                        <a [routerLink]="['/type-extraction', typeExtractionRequetee?.id, 'view' ]">{{typeExtractionRequetee.libelle}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.colonne.flux">Flux</span></dt>
+                <dd>
+                    <div *ngIf="colonne.flux">
+                        <a [routerLink]="['/flux', colonne.flux?.id, 'view']">{{colonne.flux?.libelle}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/colonne', colonne.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

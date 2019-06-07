@@ -1,0 +1,42 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "sn.sonatel.dsi.dac.dif.bigdata.gestionrequisitionsfrontendgateway",
+            "nativeLanguage": "fr"
+        },
+        "jhipsterVersion": "5.8.2",
+        "applicationType": "gateway",
+        "baseName": "gestionrequisitionsfrontendgateway",
+        "packageName": "sn.sonatel.dsi.dac.dif.bigdata.gestionrequisitionsfrontendgateway",
+        "packageFolder": "sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway",
+        "serverPort": "8060",
+        "authenticationType": "oauth2",
+        "cacheProvider": "hazelcast",
+        "enableHibernateCache": true,
+        "websocket": "spring-websocket",
+        "databaseType": "sql",
+        "devDatabaseType": "h2Disk",
+        "prodDatabaseType": "mysql",
+        "searchEngine": "elasticsearch",
+        "messageBroker": false,
+        "serviceDiscoveryType": "eureka",
+        "buildTool": "maven",
+        "enableSwaggerCodegen": false,
+        "clientFramework": "angularX",
+        "useSass": true,
+        "clientPackageManager": "npm",
+        "testFrameworks": ["protractor"],
+        "jhiPrefix": "jhi",
+        "entitySuffix": "",
+        "dtoSuffix": "DTO",
+        "otherModules": [
+            {
+                "name": "generator-jhipster-feign-client",
+                "version": "1.0.6"
+            }
+        ],
+        "enableTranslation": true,
+        "nativeLanguage": "fr",
+        "languages": ["fr", "en"]
+    }
+}

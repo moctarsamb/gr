@@ -1,0 +1,9 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "EtatRequisition": {
+            "null": "",
+            "ERREUR": "ERREUR",
+            "SUCCES": "SUCCES"
+        }
+    }
+}

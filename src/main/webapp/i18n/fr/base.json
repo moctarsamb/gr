@@ -1,0 +1,26 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "base": {
+            "home": {
+                "title": "Bases",
+                "createLabel": "Créer un nouveau Base",
+                "createOrEditLabel": "Créer ou éditer un Base",
+                "search": "Recherche pour Base"
+            },
+            "created": "Un nouveau Base a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Base avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Base avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Base {{ id }} ?"
+            },
+            "detail": {
+                "title": "Base"
+            },
+            "libelle": "Libelle",
+            "description": "Description",
+            "dimension": "Dimension",
+            "flux": "Flux",
+            "typeExtraction": "Type Extraction"
+        }
+    }
+}

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/sonatel-gestion-requisitions-frontend-gateway.iml" filepath="$PROJECT_DIR$/.idea/sonatel-gestion-requisitions-frontend-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestionrequisitionsfrontendgateway.iml" filepath="$PROJECT_DIR$/gestionrequisitionsfrontendgateway.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,78 @@
+{
+    "name": "Colonne",
+    "fields": [
+        {
+            "fieldName": "libelle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "alias",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "champsRecherche",
+            "otherEntityRelationshipName": "colonne",
+            "relationshipName": "champsRecherche"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "monitor",
+            "otherEntityRelationshipName": "colonne",
+            "relationshipName": "monitor"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "typeExtraction",
+            "otherEntityRelationshipName": "colonneRequetable",
+            "relationshipName": "typeExtractionRequetee",
+            "otherEntityField": "libelle",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "flux",
+            "otherEntityRelationshipName": "colonne",
+            "relationshipName": "flux",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "operande",
+            "otherEntityRelationshipName": "colonne",
+            "relationshipName": "operande",
+            "otherEntityField": "id",
+            "ownerSide": false
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "profil",
+            "otherEntityRelationshipName": "colonne",
+            "relationshipName": "profil",
+            "otherEntityField": "libelle",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20190606120839",
+    "entityTableName": "colonne",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

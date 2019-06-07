@@ -1,0 +1,52 @@
+{
+    "name": "FichierResultat",
+    "fields": [
+        {
+            "fieldName": "cheminFichier",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "format",
+            "fieldType": "FormatResultat",
+            "fieldValues": "CSV,EXCEL,PDF",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "avecStatistiques",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "envoiResultat",
+            "otherEntityRelationshipName": "fichierResultat",
+            "relationshipName": "envoiResultat"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "resultat",
+            "otherEntityRelationshipName": "fichierResultat",
+            "relationshipName": "resultat",
+            "otherEntityField": "etat"
+        }
+    ],
+    "changelogDate": "20190606120843",
+    "entityTableName": "fichier_resultat",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Colonne.
+    -->
+    <changeSet id="20190606120839-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="colonne_id"
+                                 baseTableName="colonne_type_extraction_requetee"
+                                 constraintName="fk_colonne_type_extraction_requetee_colonne_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="colonne"/>
+        <addForeignKeyConstraint baseColumnNames="type_extraction_requetee_id"
+                                 baseTableName="colonne_type_extraction_requetee"
+                                 constraintName="fk_colonne_type_extraction_requetee_type_extraction_requetee_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="type_extraction"/>
+        
+        <addForeignKeyConstraint baseColumnNames="flux_id"
+                                 baseTableName="colonne"
+                                 constraintName="fk_colonne_flux_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="flux"/>
+
+    </changeSet>
+</databaseChangeLog>

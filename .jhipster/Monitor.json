@@ -1,0 +1,55 @@
+{
+    "name": "Monitor",
+    "fields": [
+        {
+            "fieldName": "type",
+            "fieldType": "TypeMonitor",
+            "fieldValues": "COLONNE,FONCTION",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "colonne",
+            "otherEntityRelationshipName": "monitor",
+            "relationshipName": "colonne",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "fonction",
+            "otherEntityRelationshipName": "monitor",
+            "relationshipName": "fonction",
+            "otherEntityField": "nom"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "dimension",
+            "otherEntityRelationshipName": "monitor",
+            "relationshipName": "dimension",
+            "otherEntityField": "id",
+            "ownerSide": false
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "typeExtraction",
+            "otherEntityRelationshipName": "monitor",
+            "relationshipName": "typeExtraction",
+            "otherEntityField": "libelle",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20190606120824",
+    "entityTableName": "monitor",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

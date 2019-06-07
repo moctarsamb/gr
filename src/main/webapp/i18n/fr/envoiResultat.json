@@ -1,0 +1,25 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "envoiResultat": {
+            "home": {
+                "title": "EnvoiResultats",
+                "createLabel": "Créer un nouveau Envoi Resultat",
+                "createOrEditLabel": "Créer ou éditer un Envoi Resultat",
+                "search": "Recherche pour Envoi Resultat"
+            },
+            "created": "Un nouveau Envoi Resultat a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Envoi Resultat avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Envoi Resultat avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Envoi Resultat {{ id }} ?"
+            },
+            "detail": {
+                "title": "Envoi Resultat"
+            },
+            "email": "Email",
+            "dateEnvoi": "Date Envoi",
+            "fichierResultat": "Fichier Resultat",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

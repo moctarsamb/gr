@@ -1,0 +1,69 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="utilisateur">
+            <h2><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.utilisateur.detail.title">Utilisateur</span> {{utilisateur.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.utilisateur.matricule">Matricule</span></dt>
+                <dd>
+                    <span>{{utilisateur.matricule}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.utilisateur.username">Username</span></dt>
+                <dd>
+                    <span>{{utilisateur.username}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.utilisateur.firstName">First Name</span></dt>
+                <dd>
+                    <span>{{utilisateur.firstName}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.utilisateur.lastName">Last Name</span></dt>
+                <dd>
+                    <span>{{utilisateur.lastName}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.utilisateur.email">Email</span></dt>
+                <dd>
+                    <span>{{utilisateur.email}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.utilisateur.estActif">Est Actif</span></dt>
+                <dd>
+                    <span>{{utilisateur.estActif}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.utilisateur.user">User</span></dt>
+                <dd>
+                    {{utilisateur.user?.login}}
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.utilisateur.droitAcces">Droit Acces</span></dt>
+                <dd>
+                    <div *ngIf="utilisateur.droitAcces">
+                        <a [routerLink]="['/droit-acces', utilisateur.droitAcces?.id, 'view']">{{utilisateur.droitAcces?.libelle}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.utilisateur.filiale">Filiale</span></dt>
+                <dd>
+                    <div *ngIf="utilisateur.filiale">
+                        <a [routerLink]="['/filiale', utilisateur.filiale?.id, 'view']">{{utilisateur.filiale?.libelle}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.utilisateur.profil">Profil</span></dt>
+                <dd>
+                    <div *ngIf="utilisateur.profil">
+                        <a [routerLink]="['/profil', utilisateur.profil?.id, 'view']">{{utilisateur.profil?.libelle}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/utilisateur', utilisateur.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-monitor-heading" jhiTranslate="gestionrequisitionsfrontendgatewayApp.monitor.home.createOrEditLabel">Create or edit a Monitor</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!monitor.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="monitor.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.monitor.type" for="field_type">Type</label>
+                    <select class="form-control" name="type" [(ngModel)]="monitor.type" id="field_type"  required>
+                        <option value="COLONNE">{{'gestionrequisitionsfrontendgatewayApp.TypeMonitor.COLONNE' | translate}}</option>
+                        <option value="FONCTION">{{'gestionrequisitionsfrontendgatewayApp.TypeMonitor.FONCTION' | translate}}</option>
+                    </select>
+                    <div [hidden]="!(editForm.controls.type?.dirty && editForm.controls.type?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.type?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.monitor.colonne" for="field_colonne">Colonne</label>
+                    <select class="form-control" id="field_colonne" name="colonne" [(ngModel)]="monitor.colonne" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="colonneOption.id === monitor.colonne?.id ? monitor.colonne : colonneOption" *ngFor="let colonneOption of colonnes; trackBy: trackColonneById">{{colonneOption.libelle}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.monitor.fonction" for="field_fonction">Fonction</label>
+                    <select class="form-control" id="field_fonction" name="fonction" [(ngModel)]="monitor.fonction" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="fonctionOption.id === monitor.fonction?.id ? monitor.fonction : fonctionOption" *ngFor="let fonctionOption of fonctions; trackBy: trackFonctionById">{{fonctionOption.nom}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "flux": {
+            "home": {
+                "title": "Fluxes",
+                "createLabel": "Create a new Flux",
+                "createOrEditLabel": "Create or edit a Flux",
+                "search": "Search for Flux"
+            },
+            "created": "A new Flux is created with identifier {{ param }}",
+            "updated": "A Flux is updated with identifier {{ param }}",
+            "deleted": "A Flux is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Flux {{ id }}?"
+            },
+            "detail": {
+                "title": "Flux"
+            },
+            "libelle": "Libelle",
+            "description": "Description",
+            "colonne": "Colonne",
+            "dimension": "Dimension",
+            "jointure": "Jointure",
+            "typeExtraction": "Type Extraction",
+            "base": "Base"
+        }
+    }
+}

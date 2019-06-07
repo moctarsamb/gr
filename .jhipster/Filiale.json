@@ -1,0 +1,67 @@
+{
+    "name": "Filiale",
+    "fields": [
+        {
+            "fieldName": "code",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "libelle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "champsRecherche",
+            "otherEntityRelationshipName": "filiale",
+            "relationshipName": "champsRecherche"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "structure",
+            "otherEntityRelationshipName": "filiale",
+            "relationshipName": "structure"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "utilisateur",
+            "otherEntityRelationshipName": "filiale",
+            "relationshipName": "utilisateur"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "environnement",
+            "otherEntityRelationshipName": "filiale",
+            "relationshipName": "environnement",
+            "otherEntityField": "libelle",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "profil",
+            "otherEntityRelationshipName": "filiale",
+            "relationshipName": "profil",
+            "otherEntityField": "libelle",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190606120840",
+    "entityTableName": "filiale",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

@@ -1,0 +1,26 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "monitor": {
+            "home": {
+                "title": "Monitors",
+                "createLabel": "Créer un nouveau Monitor",
+                "createOrEditLabel": "Créer ou éditer un Monitor",
+                "search": "Recherche pour Monitor"
+            },
+            "created": "Un nouveau Monitor a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Monitor avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Monitor avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Monitor {{ id }} ?"
+            },
+            "detail": {
+                "title": "Monitor"
+            },
+            "type": "Type",
+            "colonne": "Colonne",
+            "fonction": "Fonction",
+            "dimension": "Dimension",
+            "typeExtraction": "Type Extraction"
+        }
+    }
+}

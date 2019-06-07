@@ -1,0 +1,23 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "parametrageApplication": {
+            "home": {
+                "title": "ParametrageApplications",
+                "createLabel": "Créer un nouveau Parametrage Application",
+                "createOrEditLabel": "Créer ou éditer un Parametrage Application",
+                "search": "Recherche pour Parametrage Application"
+            },
+            "created": "Un nouveau Parametrage Application a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Parametrage Application avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Parametrage Application avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Parametrage Application {{ id }} ?"
+            },
+            "detail": {
+                "title": "Parametrage Application"
+            },
+            "nomFichier": "Nom Fichier",
+            "cheminFichier": "Chemin Fichier"
+        }
+    }
+}

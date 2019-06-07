@@ -1,0 +1,37 @@
+{
+    "name": "OperateurLogique",
+    "fields": [
+        {
+            "fieldName": "operateurLogique",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "critere",
+            "otherEntityRelationshipName": "operateurLogique",
+            "relationshipName": "critere"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "filtre",
+            "otherEntityRelationshipName": "operateurLogique",
+            "relationshipName": "filtre"
+        }
+    ],
+    "changelogDate": "20190606120832",
+    "entityTableName": "operateur_logique",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

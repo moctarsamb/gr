@@ -1,0 +1,37 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="resultat">
+            <h2><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.resultat.detail.title">Resultat</span> {{resultat.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.resultat.status">Status</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'gestionrequisitionsfrontendgatewayApp.StatusEvolution.' + resultat.status}}">{{resultat.status}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.resultat.etat">Etat</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'gestionrequisitionsfrontendgatewayApp.EtatResultat.' + resultat.etat}}">{{resultat.etat}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.resultat.champsRecherche">Champs Recherche</span></dt>
+                <dd>
+                    <div *ngIf="resultat.champsRecherche">
+                        <a [routerLink]="['/champs-recherche', resultat.champsRecherche?.id, 'view']">{{resultat.champsRecherche?.champs}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/resultat', resultat.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

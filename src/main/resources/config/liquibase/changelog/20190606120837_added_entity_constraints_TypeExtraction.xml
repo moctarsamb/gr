@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity TypeExtraction.
+    -->
+    <changeSet id="20190606120837-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="type_extraction_id"
+                                 baseTableName="type_extraction_monitor"
+                                 constraintName="fk_type_extraction_monitor_type_extraction_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="type_extraction"/>
+        <addForeignKeyConstraint baseColumnNames="monitor_id"
+                                 baseTableName="type_extraction_monitor"
+                                 constraintName="fk_type_extraction_monitor_monitor_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="monitor"/>
+        
+        <addForeignKeyConstraint baseColumnNames="base_id"
+                                 baseTableName="type_extraction"
+                                 constraintName="fk_type_extraction_base_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="base"/>
+
+        <addForeignKeyConstraint baseColumnNames="filtre_id"
+                                 baseTableName="type_extraction"
+                                 constraintName="fk_type_extraction_filtre_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="filtre"/>
+
+        <addForeignKeyConstraint baseColumnNames="flux_id"
+                                 baseTableName="type_extraction"
+                                 constraintName="fk_type_extraction_flux_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="flux"/>
+
+    </changeSet>
+</databaseChangeLog>

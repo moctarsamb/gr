@@ -1,0 +1,90 @@
+{
+    "name": "TypeExtraction",
+    "fields": [
+        {
+            "fieldName": "code",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "libelle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "champsRecherche",
+            "otherEntityRelationshipName": "typeExtraction",
+            "relationshipName": "champsRecherche"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "dimension",
+            "otherEntityRelationshipName": "typeExtraction",
+            "relationshipName": "dimension"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "monitor",
+            "otherEntityRelationshipName": "typeExtraction",
+            "relationshipName": "monitor",
+            "otherEntityField": "type",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "base",
+            "otherEntityRelationshipName": "typeExtraction",
+            "relationshipName": "base",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "filtre",
+            "otherEntityRelationshipName": "typeExtraction",
+            "relationshipName": "filtre",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "flux",
+            "otherEntityRelationshipName": "typeExtraction",
+            "relationshipName": "flux",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "colonne",
+            "otherEntityRelationshipName": "typeExtractionRequetee",
+            "relationshipName": "colonneRequetable",
+            "otherEntityField": "libelle",
+            "ownerSide": false
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "profil",
+            "otherEntityRelationshipName": "typeExtraction",
+            "relationshipName": "profil",
+            "otherEntityField": "libelle",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20190606120837",
+    "entityTableName": "type_extraction",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

@@ -1,0 +1,35 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "requisition": {
+            "home": {
+                "title": "Requisitions",
+                "createLabel": "Create a new Requisition",
+                "createOrEditLabel": "Create or edit a Requisition",
+                "search": "Search for Requisition"
+            },
+            "created": "A new Requisition is created with identifier {{ param }}",
+            "updated": "A Requisition is updated with identifier {{ param }}",
+            "deleted": "A Requisition is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Requisition {{ id }}?"
+            },
+            "detail": {
+                "title": "Requisition"
+            },
+            "numeroArriveeDemande": "Numero Arrivee Demande",
+            "numeroPv": "Numero Pv",
+            "dateSaisiePv": "Date Saisie Pv",
+            "dateArriveeDemande": "Date Arrivee Demande",
+            "dateSaisieDemande": "Date Saisie Demande",
+            "envoiResultatAutomatique": "Envoi Resultat Automatique",
+            "dateReponse": "Date Reponse",
+            "dateRenvoieResultat": "Date Renvoie Resultat",
+            "status": "Status",
+            "etat": "Etat",
+            "champsRecherche": "Champs Recherche",
+            "provenance": "Provenance",
+            "structure": "Structure",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

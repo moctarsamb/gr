@@ -1,0 +1,28 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "flux": {
+            "home": {
+                "title": "Fluxes",
+                "createLabel": "Créer un nouveau Flux",
+                "createOrEditLabel": "Créer ou éditer un Flux",
+                "search": "Recherche pour Flux"
+            },
+            "created": "Un nouveau Flux a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Flux avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Flux avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Flux {{ id }} ?"
+            },
+            "detail": {
+                "title": "Flux"
+            },
+            "libelle": "Libelle",
+            "description": "Description",
+            "colonne": "Colonne",
+            "dimension": "Dimension",
+            "jointure": "Jointure",
+            "typeExtraction": "Type Extraction",
+            "base": "Base"
+        }
+    }
+}

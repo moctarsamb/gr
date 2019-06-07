@@ -1,0 +1,45 @@
+{
+    "name": "Dimension",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "monitor",
+            "otherEntityRelationshipName": "dimension",
+            "relationshipName": "monitor",
+            "otherEntityField": "type",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "base",
+            "otherEntityRelationshipName": "dimension",
+            "relationshipName": "base",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "flux",
+            "otherEntityRelationshipName": "dimension",
+            "relationshipName": "flux",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "typeExtraction",
+            "otherEntityRelationshipName": "dimension",
+            "relationshipName": "typeExtraction",
+            "otherEntityField": "libelle"
+        }
+    ],
+    "changelogDate": "20190606120823",
+    "entityTableName": "dimension",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

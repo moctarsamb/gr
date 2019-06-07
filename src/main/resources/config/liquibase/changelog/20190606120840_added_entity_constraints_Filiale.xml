@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Filiale.
+    -->
+    <changeSet id="20190606120840-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="filiale_id"
+                                 baseTableName="filiale_environnement"
+                                 constraintName="fk_filiale_environnement_filiale_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="filiale"/>
+        <addForeignKeyConstraint baseColumnNames="environnement_id"
+                                 baseTableName="filiale_environnement"
+                                 constraintName="fk_filiale_environnement_environnement_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="environnement"/>
+        
+        <addForeignKeyConstraint baseColumnNames="filiale_id"
+                                 baseTableName="filiale_profil"
+                                 constraintName="fk_filiale_profil_filiale_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="filiale"/>
+        <addForeignKeyConstraint baseColumnNames="profil_id"
+                                 baseTableName="filiale_profil"
+                                 constraintName="fk_filiale_profil_profil_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="profil"/>
+        
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,26 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "fichierResultat": {
+            "home": {
+                "title": "FichierResultats",
+                "createLabel": "Créer un nouveau Fichier Resultat",
+                "createOrEditLabel": "Créer ou éditer un Fichier Resultat",
+                "search": "Recherche pour Fichier Resultat"
+            },
+            "created": "Un nouveau Fichier Resultat a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Fichier Resultat avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Fichier Resultat avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Fichier Resultat {{ id }} ?"
+            },
+            "detail": {
+                "title": "Fichier Resultat"
+            },
+            "cheminFichier": "Chemin Fichier",
+            "format": "Format",
+            "avecStatistiques": "Avec Statistiques",
+            "envoiResultat": "Envoi Resultat",
+            "resultat": "Resultat"
+        }
+    }
+}

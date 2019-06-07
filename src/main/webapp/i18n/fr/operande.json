@@ -1,0 +1,25 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "operande": {
+            "home": {
+                "title": "Operandes",
+                "createLabel": "Créer un nouveau Operande",
+                "createOrEditLabel": "Créer ou éditer un Operande",
+                "search": "Recherche pour Operande"
+            },
+            "created": "Un nouveau Operande a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Operande avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Operande avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Operande {{ id }} ?"
+            },
+            "detail": {
+                "title": "Operande"
+            },
+            "colonne": "Colonne",
+            "valeur": "Valeur",
+            "fonction": "Fonction",
+            "clause": "Clause"
+        }
+    }
+}

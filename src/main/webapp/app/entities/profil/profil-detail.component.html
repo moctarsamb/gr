@@ -1,0 +1,49 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="profil">
+            <h2><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.profil.detail.title">Profil</span> {{profil.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.profil.libelle">Libelle</span></dt>
+                <dd>
+                    <span>{{profil.libelle}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.profil.description">Description</span></dt>
+                <dd>
+                    <span>{{profil.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.profil.colonne">Colonne</span></dt>
+                <dd>
+                    <span *ngFor="let colonne of profil.colonnes; let last = last">
+                        <a [routerLink]="['/colonne', colonne?.id, 'view' ]">{{colonne.libelle}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.profil.typeExtraction">Type Extraction</span></dt>
+                <dd>
+                    <span *ngFor="let typeExtraction of profil.typeExtractions; let last = last">
+                        <a [routerLink]="['/type-extraction', typeExtraction?.id, 'view' ]">{{typeExtraction.libelle}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.profil.administrateurProfil">Administrateur Profil</span></dt>
+                <dd>
+                    <div *ngIf="profil.administrateurProfil">
+                        <a [routerLink]="['/utilisateur', profil.administrateurProfil?.id, 'view']">{{profil.administrateurProfil?.matricule}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/profil', profil.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

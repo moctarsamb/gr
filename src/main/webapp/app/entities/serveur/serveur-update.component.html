@@ -1,0 +1,112 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-serveur-heading" jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.home.createOrEditLabel">Create or edit a Serveur</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!serveur.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="serveur.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.nom" for="field_nom">Nom</label>
+                    <input type="text" class="form-control" name="nom" id="field_nom"
+                        [(ngModel)]="serveur.nom" required/>
+                    <div [hidden]="!(editForm.controls.nom?.dirty && editForm.controls.nom?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.nom?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.adresseIp" for="field_adresseIp">Adresse Ip</label>
+                    <input type="text" class="form-control" name="adresseIp" id="field_adresseIp"
+                        [(ngModel)]="serveur.adresseIp" required/>
+                    <div [hidden]="!(editForm.controls.adresseIp?.dirty && editForm.controls.adresseIp?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.adresseIp?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.login" for="field_login">Login</label>
+                    <input type="text" class="form-control" name="login" id="field_login"
+                        [(ngModel)]="serveur.login" required/>
+                    <div [hidden]="!(editForm.controls.login?.dirty && editForm.controls.login?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.login?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.motDePasse" for="field_motDePasse">Mot De Passe</label>
+                    <input type="text" class="form-control" name="motDePasse" id="field_motDePasse"
+                        [(ngModel)]="serveur.motDePasse" required/>
+                    <div [hidden]="!(editForm.controls.motDePasse?.dirty && editForm.controls.motDePasse?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.motDePasse?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.repertoireDepots" for="field_repertoireDepots">Repertoire Depots</label>
+                    <input type="text" class="form-control" name="repertoireDepots" id="field_repertoireDepots"
+                        [(ngModel)]="serveur.repertoireDepots" required/>
+                    <div [hidden]="!(editForm.controls.repertoireDepots?.dirty && editForm.controls.repertoireDepots?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.repertoireDepots?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.repertoireResultats" for="field_repertoireResultats">Repertoire Resultats</label>
+                    <input type="text" class="form-control" name="repertoireResultats" id="field_repertoireResultats"
+                        [(ngModel)]="serveur.repertoireResultats" required/>
+                    <div [hidden]="!(editForm.controls.repertoireResultats?.dirty && editForm.controls.repertoireResultats?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.repertoireResultats?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.repertoireParametres" for="field_repertoireParametres">Repertoire Parametres</label>
+                    <input type="text" class="form-control" name="repertoireParametres" id="field_repertoireParametres"
+                        [(ngModel)]="serveur.repertoireParametres" required/>
+                    <div [hidden]="!(editForm.controls.repertoireParametres?.dirty && editForm.controls.repertoireParametres?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.repertoireParametres?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.serveur.estActif" for="field_estActif">Est Actif</label>
+                    <input type="checkbox" class="form-control" name="estActif" id="field_estActif"
+                        [(ngModel)]="serveur.estActif" />
+                    <div [hidden]="!(editForm.controls.estActif?.dirty && editForm.controls.estActif?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.estActif?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

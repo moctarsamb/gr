@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity EnvoiResultat.
+    -->
+    <changeSet id="20190606120847-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="fichier_resultat_id"
+                                 baseTableName="envoi_resultat"
+                                 constraintName="fk_envoi_resultat_fichier_resultat_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="fichier_resultat"/>
+
+        <addForeignKeyConstraint baseColumnNames="utilisateur_id"
+                                 baseTableName="envoi_resultat"
+                                 constraintName="fk_envoi_resultat_utilisateur_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="utilisateur"/>
+
+    </changeSet>
+</databaseChangeLog>

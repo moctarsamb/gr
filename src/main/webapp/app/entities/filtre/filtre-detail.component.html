@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="filtre">
+            <h2><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.filtre.detail.title">Filtre</span> {{filtre.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.filtre.clause">Clause</span></dt>
+                <dd>
+                    <span *ngFor="let clause of filtre.clauses; let last = last">
+                        <a [routerLink]="['/clause', clause?.id, 'view' ]">{{clause.id}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.filtre.operateurLogique">Operateur Logique</span></dt>
+                <dd>
+                    <div *ngIf="filtre.operateurLogique">
+                        <a [routerLink]="['/operateur-logique', filtre.operateurLogique?.id, 'view']">{{filtre.operateurLogique?.operateurLogique}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/filtre', filtre.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

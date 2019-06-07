@@ -1,0 +1,10 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "FormatResultat": {
+            "null": "",
+            "CSV": "CSV",
+            "EXCEL": "EXCEL",
+            "PDF": "PDF"
+        }
+    }
+}

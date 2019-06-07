@@ -1,0 +1,62 @@
+{
+    "name": "Flux",
+    "fields": [
+        {
+            "fieldName": "libelle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "colonne",
+            "otherEntityRelationshipName": "flux",
+            "relationshipName": "colonne"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "dimension",
+            "otherEntityRelationshipName": "flux",
+            "relationshipName": "dimension"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "jointure",
+            "otherEntityRelationshipName": "flux",
+            "relationshipName": "jointure"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "typeExtraction",
+            "otherEntityRelationshipName": "flux",
+            "relationshipName": "typeExtraction"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "base",
+            "otherEntityRelationshipName": "flux",
+            "relationshipName": "base",
+            "otherEntityField": "libelle"
+        }
+    ],
+    "changelogDate": "20190606120831",
+    "entityTableName": "flux",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

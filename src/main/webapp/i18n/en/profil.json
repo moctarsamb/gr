@@ -1,0 +1,28 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "profil": {
+            "home": {
+                "title": "Profils",
+                "createLabel": "Create a new Profil",
+                "createOrEditLabel": "Create or edit a Profil",
+                "search": "Search for Profil"
+            },
+            "created": "A new Profil is created with identifier {{ param }}",
+            "updated": "A Profil is updated with identifier {{ param }}",
+            "deleted": "A Profil is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Profil {{ id }}?"
+            },
+            "detail": {
+                "title": "Profil"
+            },
+            "libelle": "Libelle",
+            "description": "Description",
+            "utilisateur": "Utilisateur",
+            "colonne": "Colonne",
+            "typeExtraction": "Type Extraction",
+            "administrateurProfil": "Administrateur Profil",
+            "filiale": "Filiale"
+        }
+    }
+}

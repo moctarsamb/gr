@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Jointure.
+    -->
+    <changeSet id="20190606120822-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="critere_id"
+                                 baseTableName="jointure"
+                                 constraintName="fk_jointure_critere_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="critere"/>
+
+        <addForeignKeyConstraint baseColumnNames="flux_id"
+                                 baseTableName="jointure"
+                                 constraintName="fk_jointure_flux_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="flux"/>
+
+        <addForeignKeyConstraint baseColumnNames="type_jointure_id"
+                                 baseTableName="jointure"
+                                 constraintName="fk_jointure_type_jointure_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="type_jointure"/>
+
+    </changeSet>
+</databaseChangeLog>

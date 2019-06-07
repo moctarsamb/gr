@@ -1,0 +1,31 @@
+{
+    "name": "TypeJointure",
+    "fields": [
+        {
+            "fieldName": "type",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "jointure",
+            "otherEntityRelationshipName": "typeJointure",
+            "relationshipName": "jointure"
+        }
+    ],
+    "changelogDate": "20190606120838",
+    "entityTableName": "type_jointure",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

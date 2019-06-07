@@ -1,0 +1,55 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="typeExtraction">
+            <h2><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.detail.title">Type Extraction</span> {{typeExtraction.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.code">Code</span></dt>
+                <dd>
+                    <span>{{typeExtraction.code}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.libelle">Libelle</span></dt>
+                <dd>
+                    <span>{{typeExtraction.libelle}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.monitor">Monitor</span></dt>
+                <dd>
+                    <span *ngFor="let monitor of typeExtraction.monitors; let last = last">
+                        <a [routerLink]="['/monitor', monitor?.id, 'view' ]">{{monitor.type}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.base">Base</span></dt>
+                <dd>
+                    <div *ngIf="typeExtraction.base">
+                        <a [routerLink]="['/base', typeExtraction.base?.id, 'view']">{{typeExtraction.base?.libelle}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.filtre">Filtre</span></dt>
+                <dd>
+                    <div *ngIf="typeExtraction.filtre">
+                        <a [routerLink]="['/filtre', typeExtraction.filtre?.id, 'view']">{{typeExtraction.filtre?.id}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.typeExtraction.flux">Flux</span></dt>
+                <dd>
+                    <div *ngIf="typeExtraction.flux">
+                        <a [routerLink]="['/flux', typeExtraction.flux?.id, 'view']">{{typeExtraction.flux?.libelle}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/type-extraction', typeExtraction.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

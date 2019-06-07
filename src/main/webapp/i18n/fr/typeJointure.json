@@ -1,0 +1,23 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "typeJointure": {
+            "home": {
+                "title": "TypeJointures",
+                "createLabel": "Créer un nouveau Type Jointure",
+                "createOrEditLabel": "Créer ou éditer un Type Jointure",
+                "search": "Recherche pour Type Jointure"
+            },
+            "created": "Un nouveau Type Jointure a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Type Jointure avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Type Jointure avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Type Jointure {{ id }} ?"
+            },
+            "detail": {
+                "title": "Type Jointure"
+            },
+            "type": "Type",
+            "jointure": "Jointure"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "EtatResultat": {
+            "null": "",
+            "SUCCES": "SUCCES",
+            "SANSREPONSE": "SANSREPONSE",
+            "CHINOIS": "CHINOIS",
+            "ERREUR": "ERREUR",
+            "ERREURBD": "ERREURBD"
+        }
+    }
+}

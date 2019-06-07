@@ -1,0 +1,24 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "operateurLogique": {
+            "home": {
+                "title": "OperateurLogiques",
+                "createLabel": "Créer un nouveau Operateur Logique",
+                "createOrEditLabel": "Créer ou éditer un Operateur Logique",
+                "search": "Recherche pour Operateur Logique"
+            },
+            "created": "Un nouveau Operateur Logique a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Operateur Logique avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Operateur Logique avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Operateur Logique {{ id }} ?"
+            },
+            "detail": {
+                "title": "Operateur Logique"
+            },
+            "operateurLogique": "Operateur Logique",
+            "critere": "Critere",
+            "filtre": "Filtre"
+        }
+    }
+}

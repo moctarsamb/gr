@@ -1,0 +1,24 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "filtre": {
+            "home": {
+                "title": "Filtres",
+                "createLabel": "Créer un nouveau Filtre",
+                "createOrEditLabel": "Créer ou éditer un Filtre",
+                "search": "Recherche pour Filtre"
+            },
+            "created": "Un nouveau Filtre a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Filtre avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Filtre avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Filtre {{ id }} ?"
+            },
+            "detail": {
+                "title": "Filtre"
+            },
+            "typeExtraction": "Type Extraction",
+            "clause": "Clause",
+            "operateurLogique": "Operateur Logique"
+        }
+    }
+}

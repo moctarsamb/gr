@@ -1,0 +1,37 @@
+{
+    "name": "Fonction",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "monitor",
+            "otherEntityRelationshipName": "fonction",
+            "relationshipName": "monitor"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "operande",
+            "otherEntityRelationshipName": "fonction",
+            "relationshipName": "operande"
+        }
+    ],
+    "changelogDate": "20190606120827",
+    "entityTableName": "fonction",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

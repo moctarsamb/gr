@@ -1,0 +1,46 @@
+{
+    "name": "Structure",
+    "fields": [
+        {
+            "fieldName": "code",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "libelle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "requisition",
+            "otherEntityRelationshipName": "structure",
+            "relationshipName": "requisition"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "filiale",
+            "otherEntityRelationshipName": "structure",
+            "relationshipName": "filiale",
+            "otherEntityField": "libelle"
+        }
+    ],
+    "changelogDate": "20190606120841",
+    "entityTableName": "structure",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

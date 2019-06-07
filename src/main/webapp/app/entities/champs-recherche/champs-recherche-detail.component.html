@@ -1,0 +1,65 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="champsRecherche">
+            <h2><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.detail.title">Champs Recherche</span> {{champsRecherche.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.champs">Champs</span></dt>
+                <dd>
+                    <span>{{champsRecherche.champs}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.dateDebutExtraction">Date Debut Extraction</span></dt>
+                <dd>
+                    <span>{{champsRecherche.dateDebutExtraction}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.dateFinExtraction">Date Fin Extraction</span></dt>
+                <dd>
+                    <span>{{champsRecherche.dateFinExtraction}}</span>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.colonne">Colonne</span></dt>
+                <dd>
+                    <div *ngIf="champsRecherche.colonne">
+                        <a [routerLink]="['/colonne', champsRecherche.colonne?.id, 'view']">{{champsRecherche.colonne?.libelle}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.environnement">Environnement</span></dt>
+                <dd>
+                    <div *ngIf="champsRecherche.environnement">
+                        <a [routerLink]="['/environnement', champsRecherche.environnement?.id, 'view']">{{champsRecherche.environnement?.libelle}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.filiale">Filiale</span></dt>
+                <dd>
+                    <div *ngIf="champsRecherche.filiale">
+                        <a [routerLink]="['/filiale', champsRecherche.filiale?.id, 'view']">{{champsRecherche.filiale?.libelle}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.requisition">Requisition</span></dt>
+                <dd>
+                    <div *ngIf="champsRecherche.requisition">
+                        <a [routerLink]="['/requisition', champsRecherche.requisition?.id, 'view']">{{champsRecherche.requisition?.numeroPv}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="gestionrequisitionsfrontendgatewayApp.champsRecherche.typeExtraction">Type Extraction</span></dt>
+                <dd>
+                    <div *ngIf="champsRecherche.typeExtraction">
+                        <a [routerLink]="['/type-extraction', champsRecherche.typeExtraction?.id, 'view']">{{champsRecherche.typeExtraction?.libelle}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/champs-recherche', champsRecherche.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

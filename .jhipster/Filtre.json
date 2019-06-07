@@ -1,0 +1,37 @@
+{
+    "name": "Filtre",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "typeExtraction",
+            "otherEntityRelationshipName": "filtre",
+            "relationshipName": "typeExtraction"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "clause",
+            "otherEntityRelationshipName": "filtre",
+            "relationshipName": "clause",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "operateurLogique",
+            "otherEntityRelationshipName": "filtre",
+            "relationshipName": "operateurLogique",
+            "otherEntityField": "operateurLogique"
+        }
+    ],
+    "changelogDate": "20190606120825",
+    "entityTableName": "filtre",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

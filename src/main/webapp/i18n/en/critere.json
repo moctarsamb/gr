@@ -1,0 +1,24 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "critere": {
+            "home": {
+                "title": "Criteres",
+                "createLabel": "Create a new Critere",
+                "createOrEditLabel": "Create or edit a Critere",
+                "search": "Search for Critere"
+            },
+            "created": "A new Critere is created with identifier {{ param }}",
+            "updated": "A Critere is updated with identifier {{ param }}",
+            "deleted": "A Critere is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Critere {{ id }}?"
+            },
+            "detail": {
+                "title": "Critere"
+            },
+            "jointure": "Jointure",
+            "clause": "Clause",
+            "operateurLogique": "Operateur Logique"
+        }
+    }
+}

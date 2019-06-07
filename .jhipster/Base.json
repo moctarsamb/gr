@@ -1,0 +1,50 @@
+{
+    "name": "Base",
+    "fields": [
+        {
+            "fieldName": "libelle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "dimension",
+            "otherEntityRelationshipName": "base",
+            "relationshipName": "dimension"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "flux",
+            "otherEntityRelationshipName": "base",
+            "relationshipName": "flux"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "typeExtraction",
+            "otherEntityRelationshipName": "base",
+            "relationshipName": "typeExtraction"
+        }
+    ],
+    "changelogDate": "20190606120828",
+    "entityTableName": "base",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

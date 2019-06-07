@@ -1,0 +1,44 @@
+{
+    "name": "Resultat",
+    "fields": [
+        {
+            "fieldName": "status",
+            "fieldType": "StatusEvolution",
+            "fieldValues": "ENCOURS,TERMINE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "etat",
+            "fieldType": "EtatResultat",
+            "fieldValues": "SUCCES,SANSREPONSE,CHINOIS,ERREUR,ERREURBD"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "champsRecherche",
+            "otherEntityRelationshipName": "resultat",
+            "relationshipName": "champsRecherche",
+            "otherEntityField": "champs",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "fichierResultat",
+            "otherEntityRelationshipName": "resultat",
+            "relationshipName": "fichierResultat"
+        }
+    ],
+    "changelogDate": "20190606120842",
+    "entityTableName": "resultat",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

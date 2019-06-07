@@ -1,0 +1,115 @@
+{
+    "name": "Utilisateur",
+    "fields": [
+        {
+            "fieldName": "matricule",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "username",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "firstName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "estActif",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "utilisateur",
+            "relationshipName": "user",
+            "otherEntityField": "login",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "envoiResultat",
+            "otherEntityRelationshipName": "utilisateur",
+            "relationshipName": "envoiResultat"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "notification",
+            "otherEntityRelationshipName": "utilisateur",
+            "relationshipName": "notification"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "profil",
+            "otherEntityRelationshipName": "administrateurProfil",
+            "relationshipName": "profilAdministre"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "requisition",
+            "otherEntityRelationshipName": "utilisateur",
+            "relationshipName": "requisition"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "droitAcces",
+            "otherEntityRelationshipName": "utilisateur",
+            "relationshipName": "droitAcces",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "filiale",
+            "otherEntityRelationshipName": "utilisateur",
+            "relationshipName": "filiale",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "profil",
+            "otherEntityRelationshipName": "utilisateur",
+            "relationshipName": "profil",
+            "otherEntityField": "libelle"
+        }
+    ],
+    "changelogDate": "20190606120835",
+    "entityTableName": "utilisateur",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

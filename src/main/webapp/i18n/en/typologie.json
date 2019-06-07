@@ -1,0 +1,25 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "typologie": {
+            "home": {
+                "title": "Typologies",
+                "createLabel": "Create a new Typologie",
+                "createOrEditLabel": "Create or edit a Typologie",
+                "search": "Search for Typologie"
+            },
+            "created": "A new Typologie is created with identifier {{ param }}",
+            "updated": "A Typologie is updated with identifier {{ param }}",
+            "deleted": "A Typologie is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Typologie {{ id }}?"
+            },
+            "detail": {
+                "title": "Typologie"
+            },
+            "code": "Code",
+            "libelle": "Libelle",
+            "condition": "Condition",
+            "traitement": "Traitement"
+        }
+    }
+}

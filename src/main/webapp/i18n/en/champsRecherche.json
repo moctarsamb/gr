@@ -1,0 +1,30 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "champsRecherche": {
+            "home": {
+                "title": "Champs Recherches",
+                "createLabel": "Create a new Champs Recherche",
+                "createOrEditLabel": "Create or edit a Champs Recherche",
+                "search": "Search for Champs Recherche"
+            },
+            "created": "A new Champs Recherche is created with identifier {{ param }}",
+            "updated": "A Champs Recherche is updated with identifier {{ param }}",
+            "deleted": "A Champs Recherche is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Champs Recherche {{ id }}?"
+            },
+            "detail": {
+                "title": "Champs Recherche"
+            },
+            "champs": "Champs",
+            "dateDebutExtraction": "Date Debut Extraction",
+            "dateFinExtraction": "Date Fin Extraction",
+            "resultat": "Resultat",
+            "colonne": "Colonne",
+            "environnement": "Environnement",
+            "filiale": "Filiale",
+            "requisition": "Requisition",
+            "typeExtraction": "Type Extraction"
+        }
+    }
+}

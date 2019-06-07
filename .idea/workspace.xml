@@ -1,37 +1,976 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="/usr/local/bin/maven/repository" />
-        <option name="mavenHome" value="/usr/local/bin/maven" />
-      </MavenGeneralSettings>
+  <component name="ChangeListManager">
+    <list default="true" id="f983dd55-abf2-40ea-9318-bf5b78a2d573" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.huskyrc" beforeDir="false" afterPath="$PROJECT_DIR$/.huskyrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yo-rc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.yo-rc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jhipster-jdl.jh" beforeDir="false" afterPath="$PROJECT_DIR$/jhipster-jdl.jh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-jhipster.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-jhipster.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-ngxadmin.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-ngxadmin.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package3.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-to-jhipster.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package4.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-to-ngxadmin.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy.conf.json" beforeDir="false" afterPath="$PROJECT_DIR$/proxy.conf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/central-server-config/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/central-server-config/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/central-server-config/docker-config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/central-server-config/docker-config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/central-server-config/localhost-config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/central-server-config/localhost-config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/elasticsearch.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/elasticsearch.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/entrypoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/hazelcast-management-center.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/hazelcast-management-center.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/jhipster-registry.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/jhipster-registry.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/keycloak.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/keycloak.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/mysql.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/mysql.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/realm-config/jhipster-realm.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/realm-config/jhipster-realm.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/realm-config/jhipster-users-0.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/realm-config/jhipster-users-0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/sonar.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/sonar.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/ApplicationWebXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/ApplicationWebXml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/GestionrequisitionsfrontendgatewayApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/GestionrequisitionsfrontendgatewayApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/aop/logging/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/aop/logging/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/client/AuthorizedFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/client/AuthorizedFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/client/OAuth2InterceptedFeignConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/client/OAuth2InterceptedFeignConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/client/TokenRelayRequestInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/client/TokenRelayRequestInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/ApplicationProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/ApplicationProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/AsyncConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/AsyncConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/CacheConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/CacheConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/CloudDatabaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/CloudDatabaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/DatabaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/DatabaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/DateTimeFormatConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/DateTimeFormatConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/DefaultProfileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/DefaultProfileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/ElasticsearchConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/ElasticsearchConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/FeignConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/FeignConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/GatewayConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/GatewayConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/JacksonConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/JacksonConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/LiquibaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/LiquibaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/LocaleConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/LocaleConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/LoggingAspectConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/LoggingAspectConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/LoggingConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/LoggingConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/OAuth2Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/OAuth2Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/OAuth2SsoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/OAuth2SsoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/OAuth2TokenServicesConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/OAuth2TokenServicesConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/WebConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/WebConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/WebsocketConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/WebsocketConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/WebsocketSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/WebsocketSecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/apidoc/GatewaySwaggerResourcesProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/apidoc/GatewaySwaggerResourcesProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/audit/AuditEventConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/audit/AuditEventConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/audit/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/audit/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/domain/AbstractAuditingEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/domain/AbstractAuditingEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/domain/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/domain/Authority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/domain/PersistentAuditEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/domain/PersistentAuditEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/domain/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/domain/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/gateway/accesscontrol/AccessControlFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/gateway/accesscontrol/AccessControlFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/gateway/ratelimiting/RateLimitingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/gateway/ratelimiting/RateLimitingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/gateway/responserewriting/SwaggerBasePathRewritingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/gateway/responserewriting/SwaggerBasePathRewritingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/AuthorityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/AuthorityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/CustomAuditEventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/CustomAuditEventRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/PersistenceAuditEventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/PersistenceAuditEventRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/search/UserSearchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/search/UserSearchRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/search/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/search/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/AuthoritiesConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/AuthoritiesConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/OAuth2AuthenticationSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/OAuth2AuthenticationSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/SecurityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/SecurityUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/SpringSecurityAuditorAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/SpringSecurityAuditorAware.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/oauth2/AuthorizationHeaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/oauth2/AuthorizationHeaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/oauth2/SimpleAuthoritiesExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/oauth2/SimpleAuthoritiesExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/oauth2/SimplePrincipalExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/oauth2/SimplePrincipalExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/AuditEventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/AuditEventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/dto/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/dto/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/mapper/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/mapper/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/AccountResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/AccountResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/AuditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/AuditResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/GatewayResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/GatewayResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/LogoutResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/LogoutResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/LogsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/LogsResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/BadRequestAlertException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/BadRequestAlertException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/CustomParameterizedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/CustomParameterizedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/EmailAlreadyUsedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/EmailAlreadyUsedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/EmailNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/EmailNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/ErrorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/ErrorConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/ExceptionTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/ExceptionTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/FieldErrorVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/FieldErrorVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/InternalServerErrorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/InternalServerErrorException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/InvalidPasswordException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/InvalidPasswordException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/LoginAlreadyUsedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/LoginAlreadyUsedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/util/HeaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/util/HeaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/util/PaginationUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/util/PaginationUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/vm/LoggerVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/vm/LoggerVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/vm/ManagedUserVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/vm/ManagedUserVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/vm/RouteVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/vm/RouteVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/vm/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/vm/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/websocket/ActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/websocket/ActivityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/websocket/dto/ActivityDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/websocket/dto/ActivityDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/websocket/dto/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/websocket/dto/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/websocket/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/websocket/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/jib/entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/jib/entrypoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/.h2.server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/.h2.server.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/application-tls.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application-tls.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/bootstrap-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/bootstrap-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/liquibase/authorities.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/authorities.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/00000000000000_initial_schema.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/00000000000000_initial_schema.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/liquibase/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/users.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/liquibase/users_authorities.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/users_authorities.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/tls/keystore.p12" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/tls/keystore.p12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages_fr.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/admin.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/admin.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/admin.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/admin.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/audits/audit-data.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/audits/audit-data.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/audits/audit.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/audits/audit.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/audits/audits.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/audits/audits.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/audits/audits.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/audits/audits.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/audits/audits.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/audits/audits.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/audits/audits.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/audits/audits.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/configuration/configuration.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/configuration/configuration.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/configuration/configuration.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/configuration/configuration.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/configuration/configuration.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/configuration/configuration.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/configuration/configuration.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/configuration/configuration.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/docs/docs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/docs/docs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/docs/docs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/docs/docs.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/docs/docs.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/docs/docs.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/gateway/gateway-route.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/gateway/gateway-route.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/gateway/gateway-routes.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/gateway/gateway-routes.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/gateway/gateway.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/gateway/gateway.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/gateway/gateway.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/gateway/gateway.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/gateway/gateway.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/gateway/gateway.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/health/health-modal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/health/health-modal.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/health/health-modal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/health/health-modal.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/health/health.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/health/health.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/health/health.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/health/health.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/health/health.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/health/health.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/health/health.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/health/health.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/logs/log.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/logs/log.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/logs/logs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/logs/logs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/logs/logs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/logs/logs.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/logs/logs.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/logs/logs.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/logs/logs.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/logs/logs.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/metrics/metrics.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/metrics/metrics.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/metrics/metrics.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/metrics/metrics.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/metrics/metrics.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/metrics/metrics.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/metrics/metrics.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/metrics/metrics.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/tracker/tracker.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/tracker/tracker.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/tracker/tracker.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/tracker/tracker.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/admin/tracker/tracker.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/admin/tracker/tracker.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/app.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/app.constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/app.main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/app.main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/blocks/config/prod.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/blocks/config/prod.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/blocks/config/uib-pagination.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/blocks/config/uib-pagination.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/blocks/interceptor/auth-expired.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/blocks/interceptor/auth-expired.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/blocks/interceptor/errorhandler.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/blocks/interceptor/errorhandler.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/blocks/interceptor/notification.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/blocks/interceptor/notification.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/auth/account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/auth/account.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/auth/auth-session.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/auth/auth-session.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/auth/csrf.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/auth/csrf.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/auth/state-storage.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/auth/state-storage.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/auth/user-route-access-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/auth/user-route-access-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/core.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/language/language.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/language/language.constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/language/language.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/language/language.helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/login/login.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/login/login.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/tracker/tracker.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/tracker/tracker.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/tracker/window.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/tracker/window.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/user/account.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/user/account.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/user/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/user/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/core/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/core/user/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/entity.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/entity.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/home/home.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/home/home.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/home/home.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/home/home.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/home/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/home/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/home/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/home/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/error/error.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/error/error.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/error/error.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/error/error.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/error/error.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/error/error.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/footer/footer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/main/main.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/main/main.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/active-menu.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/active-menu.directive.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/profiles/page-ribbon.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/profiles/page-ribbon.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/profiles/page-ribbon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/profiles/page-ribbon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/profiles/profile-info.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/profiles/profile-info.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/profiles/profile.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/profiles/profile.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/alert/alert-error.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/alert/alert-error.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/alert/alert.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/alert/alert.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/auth/has-any-authority.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/auth/has-any-authority.directive.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/constants/error.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/constants/error.constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/constants/input.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/constants/input.constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/constants/pagination.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/constants/pagination.constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/language/find-language-from-key.pipe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/language/find-language-from-key.pipe.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/shared-common.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/shared-common.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/shared-libs.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/shared-libs.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/shared.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/util/datepicker-adapter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/util/datepicker-adapter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/util/request-util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/util/request-util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/vendor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/vendor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/css/loading.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/css/loading.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_0_head-192.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_0_head-192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_0_head-256.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_0_head-256.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_0_head-384.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_0_head-384.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_0_head-512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_0_head-512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_1_head-192.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_1_head-192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_1_head-256.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_1_head-256.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_1_head-384.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_1_head-384.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_1_head-512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_1_head-512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_2_head-192.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_2_head-192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_2_head-256.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_2_head-256.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_2_head-384.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_2_head-384.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_2_head-512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_2_head-512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_3_head-192.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_3_head-192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_3_head-256.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_3_head-256.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_3_head-384.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_3_head-384.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_3_head-512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/images/jhipster_family_member_3_head-512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/scss/_bootstrap-variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/scss/_bootstrap-variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/scss/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/content/scss/vendor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/content/scss/vendor.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/activate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/activate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/audits.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/audits.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/configuration.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/configuration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/error.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/error.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/gateway.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/gateway.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/global.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/health.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/health.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/home.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/home.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/login.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/login.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/logs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/metrics.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/metrics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/password.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/password.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/register.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/register.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/reset.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/reset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/sessions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/sessions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/tracker.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/tracker.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/user-management.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/user-management.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/activate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/activate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/audits.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/audits.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/configuration.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/configuration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/error.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/error.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/gateway.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/gateway.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/global.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/health.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/health.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/home.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/home.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/login.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/login.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/logs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/metrics.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/metrics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/password.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/password.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/register.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/register.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/reset.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/reset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/sessions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/sessions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/tracker.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/tracker.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/fr/user-management.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/fr/user-management.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/manifest.webapp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/manifest.webapp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger-ui/dist/images/throbber.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/swagger-ui/dist/images/throbber.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/swagger-ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/swagger-ui/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/WebConfigurerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/WebConfigurerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/WebConfigurerTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/WebConfigurerTestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/timezone/HibernateTimeZoneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/config/timezone/HibernateTimeZoneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/gateway/responserewriting/SwaggerBasePathRewritingFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/gateway/responserewriting/SwaggerBasePathRewritingFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/CustomAuditEventRepositoryIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/CustomAuditEventRepositoryIntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/search/UserSearchRepositoryMockConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/search/UserSearchRepositoryMockConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/timezone/DateTimeWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/timezone/DateTimeWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/timezone/DateTimeWrapperRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/repository/timezone/DateTimeWrapperRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/SecurityUtilsUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/security/SecurityUtilsUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/UserServiceIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/UserServiceIntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/mapper/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/service/mapper/UserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/AccountResourceIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/AccountResourceIntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/AuditResourceIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/AuditResourceIntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/LogoutResourceIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/LogoutResourceIntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/LogsResourceIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/LogsResourceIntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/UserResourceIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/UserResourceIntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/ExceptionTranslatorIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/ExceptionTranslatorIntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/ExceptionTranslatorTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/errors/ExceptionTranslatorTestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/util/PaginationUtilUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/web/rest/util/PaginationUtilUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/e2e/account/account.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/e2e/account/account.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/e2e/admin/administration.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/e2e/admin/administration.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/e2e/page-objects/jhi-page-objects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/e2e/page-objects/jhi-page-objects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/jest-global-mocks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/jest-global-mocks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/jest.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/jest.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/jest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/jest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/protractor.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/audits/audits.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/audits/audits.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/audits/audits.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/audits/audits.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/configuration/configuration.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/configuration/configuration.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/configuration/configuration.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/configuration/configuration.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/health/health.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/health/health.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/logs/logs.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/logs/logs.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/logs/logs.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/logs/logs.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/metrics/metrics.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/metrics/metrics.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/metrics/metrics.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/app/admin/metrics/metrics.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/app/core/user/account.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/app/core/user/account.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-account.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-active-modal.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-active-modal.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-alert.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-alert.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-event-manager.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-event-manager.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-language.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-language.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-login.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-login.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-route.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-route.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-state-storage.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-state-storage.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-tracker.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/helpers/mock-tracker.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/helpers/spyobject.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/helpers/spyobject.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/javascript/spec/test.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/javascript/spec/test.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig-aot.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig-aot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/logo-jhipster.png" beforeDir="false" afterPath="$PROJECT_DIR$/webpack/logo-jhipster.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/webpack.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack/webpack.common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack/webpack.dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/webpack.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack/webpack.prod.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/node_modules/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
     </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>profil</find>
+      <find>param</find>
+      <find>base</find>
+      <find>flux</find>
+      <find>colonne</find>
+      <find>dimensio</find>
+      <find>monitor</find>
+      <find>fonct</find>
+      <find>critere</find>
+      <find>message</find>
+      <find>title</find>
+      <find>home</find>
+      <find>notific</find>
+      <find>role</find>
+      <find>parametra</find>
+      <find>entities</find>
+      <find>filiale</find>
+      <find>notifica</find>
+      <find>typol</find>
+      <find>dimension</find>
+      <find>typeExtraction</find>
+      <find>envoiResultat</find>
+      <find>fonction</find>
+      <find>operateurLogique</find>
+      <find>(operateur)</find>
+      <find>Requisition</find>
+      <find>typeJointure</find>
+      <find>valeur</find>
+      <find>ceci es</find>
+      <find>footer</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.editorconfig" />
+        <option value="$PROJECT_DIR$/package3.json" />
+        <option value="$PROJECT_DIR$/package4.json" />
+        <option value="$PROJECT_DIR$/package-jhipster.json" />
+        <option value="$PROJECT_DIR$/package-from-jhipster.json" />
+        <option value="$PROJECT_DIR$/package-from-ngxadmin.json" />
+        <option value="$PROJECT_DIR$/package-ngxadmin.json" />
+        <option value="$PROJECT_DIR$/../ngx-admin-master/package.json" />
+        <option value="$PROJECT_DIR$/package-to-ngxadmin.json" />
+        <option value="$PROJECT_DIR$/package-to-jhipster.json" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/angular.json" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/home/home.component.html" />
+        <option value="$PROJECT_DIR$/jhipster-jdl.jh" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/liquibase/users.csv" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/layouts/footer/footer.component.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/i18n/en/global.json" />
+        <option value="$PROJECT_DIR$/src/main/webapp/i18n/fr/global.json" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/layouts/footer/footer.component.ts" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="downloadDocsAutomatically" value="true" />
-        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="IDE" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="189" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="190" />
     <option name="y" value="7" />
-    <option name="width" value="1491" />
+    <option name="width" value="1490" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gestionrequisitionsfrontendgateway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonatel-gestion-requisitions-frontend-gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="h2" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/i18n/en" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/i18n/en" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/i18n/fr" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/app/home" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.docker/Dockerfile">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="GestionrequisitionsfrontendgatewayApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gestionrequisitionsfrontendgateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="sn.sonatel.dsi.dac.dif.bigdata.gestionrequisitionsfrontendgateway.GestionrequisitionsfrontendgatewayApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="docker/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="src/main/docker/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker/Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$" value="PREVIEW" />
+        <entry key="/mnt/sda4/Téléchargements/COMPRESSED/Sonatel/Old Projects Sources/fraudebackbda-radar_postmvp_sparkjob@417583b1a83/fms-rule" value="PREVIEW" />
+        <entry key="/mnt/sda4/Téléchargements/COMPRESSED/Sonatel/Old Projects/kbtr-master@177a9a72159" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f983dd55-abf2-40ea-9318-bf5b78a2d573" name="Default Changelist" comment="" />
+      <created>1559056513907</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559056513907</updated>
+      <workItem from="1559056516990" duration="2300000" />
+      <workItem from="1559820988968" duration="3517000" />
+      <workItem from="1559828941237" duration="602000" />
+      <workItem from="1559831953593" duration="6875000" />
+      <workItem from="1559900149850" duration="245000" />
+      <workItem from="1559901293661" duration="6991000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="20530000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26373628" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32881" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="SBT Console" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.26938775" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="SBT Execute" order="15" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="16" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32967034" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32967034" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../ngx-admin-master (copie)/package.json" />
+    <entry file="file://$PROJECT_DIR$/package-ngxadmin.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-to-jhipster.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-to-ngxadmin.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ngx-admin-master/package.json" />
+    <entry file="file://$PROJECT_DIR$/package-jhipster.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gr-master/package.json" />
+    <entry file="file://$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/index.d.ts" />
+    <entry file="file://$PROJECT_DIR$/webpack/webpack.common.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/@theme/theme.module.ts" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/@theme/layouts/one-column/one-column.layout.ts" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/@theme/layouts/one-column/one-column.layout.scss" />
+    <entry file="file://$PROJECT_DIR$/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/layouts/main/main.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/i18n/en/home.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/i18n/fr/home.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/liquibase/users_authorities.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/liquibase/users.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/liquibase/authorities.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/.h2.server.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jhipster-jdl.jh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="198" column="59" lean-forward="true" selection-start-line="198" selection-start-column="59" selection-end-line="198" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sn/sonatel/dsi/dac/dif/bigdata/gestionrequisitionsfrontendgateway/GestionrequisitionsfrontendgatewayApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/vendor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/content/scss/vendor.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion-requisitions-gateway-run-docker-servers.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/layouts/main/main.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/layouts/error/error.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/layouts/footer/footer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/layouts/footer/footer.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="83" selection-start-line="1" selection-start-column="83" selection-end-line="1" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/i18n/fr/global.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="185" selection-start-line="4" selection-start-column="185" selection-end-line="4" selection-end-column="185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/i18n/en/global.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="343" column="19" selection-start-line="343" selection-start-column="19" selection-end-line="343" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ProjectJDKs.UI">
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.12.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|gestionrequisitionsfrontendgateway</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

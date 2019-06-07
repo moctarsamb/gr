@@ -1,0 +1,9 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "StatusEvolution": {
+            "null": "",
+            "ENCOURS": "ENCOURS",
+            "TERMINE": "TERMINE"
+        }
+    }
+}

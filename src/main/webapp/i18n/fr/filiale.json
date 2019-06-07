@@ -1,0 +1,28 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "filiale": {
+            "home": {
+                "title": "Filiales",
+                "createLabel": "Créer un nouveau Filiale",
+                "createOrEditLabel": "Créer ou éditer un Filiale",
+                "search": "Recherche pour Filiale"
+            },
+            "created": "Un nouveau Filiale a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Filiale avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Filiale avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Filiale {{ id }} ?"
+            },
+            "detail": {
+                "title": "Filiale"
+            },
+            "code": "Code",
+            "libelle": "Libelle",
+            "champsRecherche": "Champs Recherche",
+            "structure": "Structure",
+            "utilisateur": "Utilisateur",
+            "environnement": "Environnement",
+            "profil": "Profil"
+        }
+    }
+}

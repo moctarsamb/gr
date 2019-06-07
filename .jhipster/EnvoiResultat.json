@@ -1,0 +1,42 @@
+{
+    "name": "EnvoiResultat",
+    "fields": [
+        {
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateEnvoi",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "fichierResultat",
+            "otherEntityRelationshipName": "envoiResultat",
+            "relationshipName": "fichierResultat",
+            "otherEntityField": "cheminFichier"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "utilisateur",
+            "otherEntityRelationshipName": "envoiResultat",
+            "relationshipName": "utilisateur",
+            "otherEntityField": "matricule"
+        }
+    ],
+    "changelogDate": "20190606120847",
+    "entityTableName": "envoi_resultat",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

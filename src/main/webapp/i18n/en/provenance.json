@@ -1,0 +1,25 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "provenance": {
+            "home": {
+                "title": "Provenances",
+                "createLabel": "Create a new Provenance",
+                "createOrEditLabel": "Create or edit a Provenance",
+                "search": "Search for Provenance"
+            },
+            "created": "A new Provenance is created with identifier {{ param }}",
+            "updated": "A Provenance is updated with identifier {{ param }}",
+            "deleted": "A Provenance is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Provenance {{ id }}?"
+            },
+            "detail": {
+                "title": "Provenance"
+            },
+            "code": "Code",
+            "libelle": "Libelle",
+            "email": "Email",
+            "requisition": "Requisition"
+        }
+    }
+}

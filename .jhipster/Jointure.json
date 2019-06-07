@@ -1,0 +1,37 @@
+{
+    "name": "Jointure",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "critere",
+            "otherEntityRelationshipName": "jointure",
+            "relationshipName": "critere",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "flux",
+            "otherEntityRelationshipName": "jointure",
+            "relationshipName": "flux",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "typeJointure",
+            "otherEntityRelationshipName": "jointure",
+            "relationshipName": "typeJointure",
+            "otherEntityField": "type"
+        }
+    ],
+    "changelogDate": "20190606120822",
+    "entityTableName": "jointure",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

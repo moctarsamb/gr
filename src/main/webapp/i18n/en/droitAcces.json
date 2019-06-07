@@ -1,0 +1,24 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "droitAcces": {
+            "home": {
+                "title": "Droit Acces",
+                "createLabel": "Create a new Droit Acces",
+                "createOrEditLabel": "Create or edit a Droit Acces",
+                "search": "Search for Droit Acces"
+            },
+            "created": "A new Droit Acces is created with identifier {{ param }}",
+            "updated": "A Droit Acces is updated with identifier {{ param }}",
+            "deleted": "A Droit Acces is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Droit Acces {{ id }}?"
+            },
+            "detail": {
+                "title": "Droit Acces"
+            },
+            "code": "Code",
+            "libelle": "Libelle",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

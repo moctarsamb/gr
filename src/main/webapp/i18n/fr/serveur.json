@@ -1,0 +1,29 @@
+{
+    "gestionrequisitionsfrontendgatewayApp": {
+        "serveur": {
+            "home": {
+                "title": "Serveurs",
+                "createLabel": "Créer un nouveau Serveur",
+                "createOrEditLabel": "Créer ou éditer un Serveur",
+                "search": "Recherche pour Serveur"
+            },
+            "created": "Un nouveau Serveur a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Serveur avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Serveur avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Serveur {{ id }} ?"
+            },
+            "detail": {
+                "title": "Serveur"
+            },
+            "nom": "Nom",
+            "adresseIp": "Adresse Ip",
+            "login": "Login",
+            "motDePasse": "Mot De Passe",
+            "repertoireDepots": "Repertoire Depots",
+            "repertoireResultats": "Repertoire Resultats",
+            "repertoireParametres": "Repertoire Parametres",
+            "estActif": "Est Actif"
+        }
+    }
+}

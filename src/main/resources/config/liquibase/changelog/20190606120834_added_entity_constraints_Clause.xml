@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Clause.
+    -->
+    <changeSet id="20190606120834-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="clause_id"
+                                 baseTableName="clause_operande"
+                                 constraintName="fk_clause_operande_clause_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="clause"/>
+        <addForeignKeyConstraint baseColumnNames="operande_id"
+                                 baseTableName="clause_operande"
+                                 constraintName="fk_clause_operande_operande_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="operande"/>
+        
+        <addForeignKeyConstraint baseColumnNames="operateur_id"
+                                 baseTableName="clause"
+                                 constraintName="fk_clause_operateur_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="operateur"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,47 @@
+{
+    "name": "Operande",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "colonne",
+            "otherEntityRelationshipName": "operande",
+            "relationshipName": "colonne",
+            "otherEntityField": "libelle",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "valeur",
+            "otherEntityRelationshipName": "operande",
+            "relationshipName": "valeur",
+            "otherEntityField": "valeur",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "fonction",
+            "otherEntityRelationshipName": "operande",
+            "relationshipName": "fonction",
+            "otherEntityField": "nom"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "clause",
+            "otherEntityRelationshipName": "operande",
+            "relationshipName": "clause",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20190606120829",
+    "entityTableName": "operande",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

@@ -1,0 +1,108 @@
+{
+    "name": "Requisition",
+    "fields": [
+        {
+            "fieldName": "numeroArriveeDemande",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "numeroPv",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "dateSaisiePv",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateArriveeDemande",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateSaisieDemande",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "envoiResultatAutomatique",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateReponse",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "dateRenvoieResultat",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "StatusEvolution",
+            "fieldValues": "ENCOURS,TERMINE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "etat",
+            "fieldType": "EtatRequisition",
+            "fieldValues": "ERREUR,SUCCES"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "champsRecherche",
+            "otherEntityRelationshipName": "requisition",
+            "relationshipName": "champsRecherche"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "provenance",
+            "otherEntityRelationshipName": "requisition",
+            "relationshipName": "provenance",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "structure",
+            "otherEntityRelationshipName": "requisition",
+            "relationshipName": "structure",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "utilisateur",
+            "otherEntityRelationshipName": "requisition",
+            "relationshipName": "utilisateur",
+            "otherEntityField": "matricule"
+        }
+    ],
+    "changelogDate": "20190606120846",
+    "entityTableName": "requisition",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

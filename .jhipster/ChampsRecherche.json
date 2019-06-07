@@ -1,0 +1,80 @@
+{
+    "name": "ChampsRecherche",
+    "fields": [
+        {
+            "fieldName": "champs",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateDebutExtraction",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateFinExtraction",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "resultat",
+            "otherEntityRelationshipName": "champsRecherche",
+            "relationshipName": "resultat",
+            "ownerSide": false
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "colonne",
+            "otherEntityRelationshipName": "champsRecherche",
+            "relationshipName": "colonne",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "environnement",
+            "otherEntityRelationshipName": "champsRecherche",
+            "relationshipName": "environnement",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "filiale",
+            "otherEntityRelationshipName": "champsRecherche",
+            "relationshipName": "filiale",
+            "otherEntityField": "libelle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "requisition",
+            "otherEntityRelationshipName": "champsRecherche",
+            "relationshipName": "requisition",
+            "otherEntityField": "numeroPv"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "typeExtraction",
+            "otherEntityRelationshipName": "champsRecherche",
+            "relationshipName": "typeExtraction",
+            "otherEntityField": "libelle"
+        }
+    ],
+    "changelogDate": "20190606120844",
+    "entityTableName": "champs_recherche",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

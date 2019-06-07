@@ -1,0 +1,54 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-resultat-heading" jhiTranslate="gestionrequisitionsfrontendgatewayApp.resultat.home.createOrEditLabel">Create or edit a Resultat</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!resultat.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="resultat.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.resultat.status" for="field_status">Status</label>
+                    <select class="form-control" name="status" [(ngModel)]="resultat.status" id="field_status"  required>
+                        <option value="ENCOURS">{{'gestionrequisitionsfrontendgatewayApp.StatusEvolution.ENCOURS' | translate}}</option>
+                        <option value="TERMINE">{{'gestionrequisitionsfrontendgatewayApp.StatusEvolution.TERMINE' | translate}}</option>
+                    </select>
+                    <div [hidden]="!(editForm.controls.status?.dirty && editForm.controls.status?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.status?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.resultat.etat" for="field_etat">Etat</label>
+                    <select class="form-control" name="etat" [(ngModel)]="resultat.etat" id="field_etat" >
+                        <option value="SUCCES">{{'gestionrequisitionsfrontendgatewayApp.EtatResultat.SUCCES' | translate}}</option>
+                        <option value="SANSREPONSE">{{'gestionrequisitionsfrontendgatewayApp.EtatResultat.SANSREPONSE' | translate}}</option>
+                        <option value="CHINOIS">{{'gestionrequisitionsfrontendgatewayApp.EtatResultat.CHINOIS' | translate}}</option>
+                        <option value="ERREUR">{{'gestionrequisitionsfrontendgatewayApp.EtatResultat.ERREUR' | translate}}</option>
+                        <option value="ERREURBD">{{'gestionrequisitionsfrontendgatewayApp.EtatResultat.ERREURBD' | translate}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gestionrequisitionsfrontendgatewayApp.resultat.champsRecherche" for="field_champsRecherche">Champs Recherche</label>
+                    <select class="form-control" id="field_champsRecherche" name="champsRecherche" [(ngModel)]="resultat.champsRecherche">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="champsRechercheOption.id === resultat.champsRecherche?.id ? resultat.champsRecherche : champsRechercheOption" *ngFor="let champsRechercheOption of champsrecherches; trackBy: trackChampsRechercheById">{{champsRechercheOption.champs}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
